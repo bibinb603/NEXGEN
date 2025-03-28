@@ -1,0 +1,331 @@
+/* Font Styles */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.boldonse-regular {
+    font-family: "Boldonse", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-400 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Global Styles */
+body {
+    background-color: #1f1d1d;
+    font-family: "IBM Plex Mono", monospace;
+    color: white;
+}
+
+/* Button Font */
+.btn {
+    font-family: "Orbitron", sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(to right, #4b0082, #865dff);
+    padding: 10px 20px;
+    z-index: 1030;
+    height: 100px;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+    height: 80px;
+    transition: height 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    transition: 0.3s;
+    position: relative;
+}
+
+/*  Dropdown Styles  */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ffcc00;
+}
+
+.dropdown-menu {
+    background: rgba(255, 255, 255, 0.9);
+    background-color: #4b0082;
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+    transition: 0.3s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #865dff;
+    color: white;
+}
+
+/* Search Icon Styles */
+.search-icon {
+    color: white !important;
+    font-size: 1.2rem;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    position: relative;
+    right: 20px;
+}
+
+.search-icon:hover {
+    color: #ffcc00 !important;
+    transform: scale(1.1);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 992px) {
+    .navbar {
+        height: auto;
+        min-height: 80px;
+    }
+
+    .navbar-brand img {
+        height: 60px;
+    }
+
+    .search-icon {
+        right: 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 12px 0;
+    }
+
+    /* Dropdown Mobile s */
+    .dropdown-menu {
+        background-color: #4b0082;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .search-icon {
+        font-size: 1rem;
+        padding: 6px 12px !important;
+    }
+}
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+    
+    
+}
+
+body{
+    background-color: black;
+    color: white;
+} */
+
+.revSec{
+    margin-top: 130px;
+}
+
+.revHead{
+    color: #865dff;
+}
+
+.div1{
+
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    
+    
+    
+    
+    
+}
+
+
+
+/* .imgdiv img{
+    
+} */
+
+.content{
+    height: 420px;
+    width: 400px;
+    border: 1px solid white;
+    justify-items: center;
+    
+}
+
+.content h1,p{
+    padding: 10px;
+}
+
+.content:hover h1{
+    color: red;
+    cursor: pointer;
+}
+
+
+.progress-container {
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+
+svg {
+    transform: rotate(-90deg);
+}
+
+.progress-background {
+    stroke: #ddd;
+}
+
+.progress-bar {
+    stroke: #28a745;
+    stroke-dasharray: 251.2;
+    stroke-dashoffset: 251.2;
+    stroke-linecap: round;
+    animation: progressAnimation 2s ease-out forwards, pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes progressAnimation {
+    from {
+        stroke-dashoffset: 251.2;
+    }
+    to {
+        stroke-dashoffset: 75.36;
+    }
+}
+
+@keyframes pulse {
+    0% { stroke-opacity: 1; }
+    50% { stroke-opacity: 0.6; }
+    100% { stroke-opacity: 1; }
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    animation: bounceIn 1s ease-out 1.5s forwards;
+}
+
+@keyframes bounceIn {
+    0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+    60% { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+.imgdiv {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .imgdiv:hover .image {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  
+  .imgdiv:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #865dff;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  .div2{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    margin-top: 50px;
+    /* margin-left: 23px; */
+    
+  }
+
+  .smallRev{
+
+    height: 180px;
+    width: 280px;
+  }
+
+  .smallRev:hover h5{
+    color: red;
+    cursor: pointer;
+  }
+  .progress-bar2 {
+    stroke: red;
+    stroke-dasharray: 251.2;
+    stroke-dashoffset: 251.2;
+    stroke-linecap: round;
+    animation: progressAnimation2 2s ease-out forwards, pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes progressAnimation2 {
+    from {
+        stroke-dashoffset: 251.2;
+    }
+    to {
+        stroke-dashoffset: 50.24;
+    }
+}
+
+.progress-bar3 {
+    stroke: blue;
+    stroke-dasharray: 251.2;
+    stroke-dashoffset: 251.2;
+    stroke-linecap: round;
+    animation: progressAnimation3 2s ease-out forwards, pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes progressAnimation3 {
+    from {
+        stroke-dashoffset: 251.2;
+    }
+    to {
+        stroke-dashoffset: 100.48;
+    }
+}
+
+ 

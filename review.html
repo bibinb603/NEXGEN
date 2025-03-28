@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexGen</title>
+    <!-- Bootstrap CSS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Animate.css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- jQuery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Popper.js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+
+    <!-- GSAP  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- GSAP ScrollTrigger  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Bootstrap JavaScript  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./review.css" />
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./IMG/2-removebg-preview.png" alt="Logo" />
+        </a>
+
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav fw-medium">
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="#">Home</a>
+            </li>
+            <!-- CATEGORY DROPDOWN -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle me-lg-4"
+                href="#"
+                id="categoryDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Category
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                <li><a class="dropdown-item" href="#">News & Updates</a></li>
+                <li><a class="dropdown-item" href="#">Game Reviews</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >E-sports & Competitive Gaming</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Opinion & Features</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="#">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="#">Author</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="#">Contact</a>
+            </li>
+
+            <!-- Mobile Search -->
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#" id="mobileSearch">
+                <i class="fas fa-search"></i>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="#">Subscribe</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Desktop Search -->
+        <div class="d-none d-lg-block ms-auto">
+          <a class="nav-link search-icon" href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+
+    <section class="revSec">
+
+        <h1 class="d-flex justify-content-center revHead" style="font-size: 70px;">Reviews</h1>
+
+        <div class="div1">
+            <div class="imgdiv">
+                <img src="./images/4465133-duvzcxuq.jpg" alt="" height="400px" width="700px" class="image">
+                <div class="middle">
+                    <div class="text" ><a href="" style="color: white;text-decoration: none;">Read More</a></div>
+                  </div>
+            </div>
+            
+
+            <div class="content">
+
+                <div class="progress-container">
+                    <svg width="140" height="140" viewBox="0 0 100 100">
+                        <!-- Background Circle -->
+                        <circle cx="50" cy="50" r="40" stroke-width="10" fill="none" class="progress-background"></circle>
+                        <!-- Animated Progress Circle -->
+                        <circle cx="50" cy="50" r="40" stroke-width="10" fill="none" class="progress-bar"></circle>
+                    </svg>
+                    <!-- Progress Percentage Text -->
+                    <span class="progress-text">7</span>
+                </div>
+
+                <h1>Atomfall Review - Bunker Thrill</h1>
+                <p>With its wide-open quest design, Atomfall takes a novel approach to storytelling that helps push through some of its lesser parts.</p>
+            </div>
+        </div>
+
+        <div class="div2">
+
+            <div class="smallRev">
+                <div class="progress-container" style="position: absolute;">
+                    <svg width="50" height="50" viewBox="0 0 100 100" style="background-color: white;" >
+                        <!-- Background Circle -->
+                        <circle cx="50" cy="50" r="40" stroke-width="10" fill="none" class="progress-background"> </circle>
+                        <!-- Animated Progress Circle -->
+                        <circle cx="50" cy="50" r="40" stroke-width="10" fill="none" class="progress-bar2"></circle>
+                    </svg>
+                    <!-- Progress Percentage Text -->
+                    <span class="progress-text" style="margin-top: -45px;margin-left: -45px;color: black;">8</span>
+                </div>
+                <img src="./images/4464204-newproject.jpg" alt="" height="180px" width="280px"><br><br>
+                <h5 style="text-align: justify;">MLB The Show 25 Review - Still The MVP</h5>
+                
+
+            </div>
+            <div class="smallRev">
+                <div class="progress-container" style="position: absolute;">
+                    <svg width="50" height="50" viewBox="0 0 100 100" style="background-color: white;" >
+                        <!-- Background Circle -->
+                        <circle cx="50" cy="50" r="40" stroke-width="10" fill="none" class="progress-background"> </circle>
+                        <!-- Animated Progress Circle -->
+                        <circle cx="50" cy="50" r="40" stroke-width="10" fill="none" class="progress-bar2"></circle>
+                    </svg>
+                    <!-- Progress Percentage Text -->
+                    <span class="progress-text" style="margin-top: -45px;margin-left: -45px;color: black;">8</span>
+                </div>
+                <img src="./images/4464275-firstberserker.jpeg" alt="" height="180px" width="280px"><br><br>
+                <h5 style="text-align: justify;">The First Berserker: Khazan Review - Asouls-like That Packs a punch</h5>
+                
+
+            </div>
+            <div class="smallRev">
+                <div class="progress-container" style="position: absolute;">
+                    <svg width="50" height="50" viewBox="0 0 100 100" style="background-color: white;" >
+                        <!-- Background Circle -->
+                        <circle cx="50" cy="50" r="40" stroke-width="10" fill="none" class="progress-background"> </circle>
+                        <!-- Animated Progress Circle -->
+                        <circle cx="50" cy="50" r="40" stroke-width="10" fill="none" class="progress-bar3"></circle>
+                    </svg>
+                    <!-- Progress Percentage Text -->
+                    <span class="progress-text" style="margin-top: -45px;margin-left: -45px;color: black;">6</span>
+                </div>
+                <img src="./images/4462597-ce843498-3592-4518-8720-c3143e1595cd.jpg" alt="" height="180px" width="280px"><br><br>
+                <h5 style="text-align: justify;">InZoi Early Access Review - Pretty Vacant</h5>
+                
+
+            </div>
+            <div class="smallRev">
+                <div class="progress-container" style="position: absolute;">
+                    <svg width="50" height="50" viewBox="0 0 100 100" style="background-color: white;" >
+                        <!-- Background Circle -->
+                        <circle cx="50" cy="50" r="40" stroke-width="10" fill="none" class="progress-background"> </circle>
+                        <!-- Animated Progress Circle -->
+                        <circle cx="50" cy="50" r="40" stroke-width="10" fill="none" class="progress-bar2"></circle>
+                    </svg>
+                    <!-- Progress Percentage Text -->
+                    <span class="progress-text" style="margin-top: -45px;margin-left: -45px;color: black;">8</span>
+                </div>
+                <img src="./images/4460815-ghbl-7lw8aaym-y.jpg" alt="" height="180px" width="280px"><br><br>
+                <h5 style="text-align: justify;">Assassin's Creed Shadows Review - Shinobi Simulator</h5>
+                
+
+            </div>
+            
+        </div>
+
+    </section>
+
+</body>
+</html>

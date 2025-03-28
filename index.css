@@ -1,0 +1,350 @@
+/* Font Styles */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.boldonse-regular {
+    font-family: "Boldonse", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-400 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Global Styles */
+body {
+    background-color: #1f1d1d;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+/* Button Font */
+.btn {
+    font-family: "Orbitron", sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(to right, #4b0082, #865dff);
+    padding: 10px 20px;
+    z-index: 1030;
+    height: 100px;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+    height: 80px;
+    transition: height 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    transition: 0.3s;
+    position: relative;
+}
+
+/*  Dropdown Styles  */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ffcc00;
+}
+
+.dropdown-menu {
+    background: rgba(255, 255, 255, 0.9);
+    background-color: #4b0082;
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+    transition: 0.3s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #865dff;
+    color: white;
+}
+
+/* Search Icon Styles */
+.search-icon {
+    color: white !important;
+    font-size: 1.2rem;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    position: relative;
+    right: 20px;
+}
+
+.search-icon:hover {
+    color: #ffcc00 !important;
+    transform: scale(1.1);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 992px) {
+    .navbar {
+        height: auto;
+        min-height: 80px;
+    }
+
+    .navbar-brand img {
+        height: 60px;
+    }
+
+    .search-icon {
+        right: 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 12px 0;
+    }
+
+    /* Dropdown Mobile s */
+    .dropdown-menu {
+        background-color: #4b0082;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .search-icon {
+        font-size: 1rem;
+        padding: 6px 12px !important;
+    }
+}
+
+/* main card */
+/* Grid Layout */
+.latest-news {
+    color: #865dff;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    margin-top: 140px;
+    margin-bottom: 50px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 8px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.div1 {
+    grid-column: span 6 / span 6;
+    grid-row: span 5 / span 5;
+    grid-row-start: 1;
+}
+
+.carousel-img {
+    border-radius: 20px;
+    transition: filter 0.3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel:hover .carousel-img {
+    filter: blur(5px);
+}
+
+.headline {
+    color: #865dff !important;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.subheadline {
+    color: white;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 90%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .headline {
+        font-size: 2rem;
+    }
+
+    .subheadline {
+        font-size: 1rem;
+    }
+
+    .carousel-caption {
+        width: 95%;
+        bottom: 15px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-caption {
+        width: 100%;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        border-radius: 0;
+    }
+
+    .headline {
+        font-size: 1.5rem;
+    }
+
+    .subheadline {
+        font-size: 1rem;
+    }
+}
+
+.carousel-caption {
+    display: block !important;
+}
+
+/* top rated games category button  */
+
+.button-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 2rem 5%;
+    background: #1f1d1d;
+    flex-wrap: wrap;
+}
+
+/* Inline heading styling */
+.inline-heading {
+    color: #865dff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Remove default link styles */
+.button-group a {
+    text-decoration: none;
+}
+
+/* Button styling */
+.skew-button {
+    background: #fff;
+    border: none;
+    padding: 12px 25px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 120px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.skew-button span {
+    display: inline-block;
+    transform: skew(21deg);
+    color: #1f1d1d;
+    position: relative;
+    z-index: 1;
+}
+
+.skew-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: #865dff;
+    opacity: 0;
+    z-index: 0;
+    transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.skew-button:hover {
+    color: #fff;
+    box-shadow: 0 0 15px rgba(134, 93, 255, 0.4);
+}
+
+.skew-button:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .button-row {
+        gap: 20px;
+    }
+
+    .inline-heading {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .button-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .button-group {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .skew-button {
+        width: 100px;
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    .inline-heading {
+        font-size: 1.4rem;
+    }
+}

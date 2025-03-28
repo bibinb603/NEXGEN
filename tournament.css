@@ -1,0 +1,241 @@
+/* Font Styles */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.boldonse-regular {
+    font-family: "Boldonse", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-400 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Global Styles */
+body {
+    background-color: #1f1d1d;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+/* Button Font */
+.btn {
+    font-family: "Orbitron", sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(to right, #4b0082, #865dff);
+    padding: 10px 20px;
+    z-index: 1030;
+    height: 100px;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+    height: 80px;
+    transition: height 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    transition: 0.3s;
+    position: relative;
+}
+
+/*  Dropdown Styles  */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ffcc00;
+}
+
+.dropdown-menu {
+    background: rgba(255, 255, 255, 0.9);
+    background-color: #4b0082;
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+    transition: 0.3s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #865dff;
+    color: white;
+}
+
+/* Search Icon Styles */
+.search-icon {
+    color: white !important;
+    font-size: 1.2rem;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    position: relative;
+    right: 20px;
+}
+
+.search-icon:hover {
+    color: #ffcc00 !important;
+    transform: scale(1.1);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 992px) {
+    .navbar {
+        height: auto;
+        min-height: 80px;
+    }
+
+    .navbar-brand img {
+        height: 60px;
+    }
+
+    .search-icon {
+        right: 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 12px 0;
+    }
+
+    /* Dropdown Mobile s */
+    .dropdown-menu {
+        background-color: #4b0082;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .search-icon {
+        font-size: 1rem;
+        padding: 6px 12px !important;
+    }
+}
+
+/* tournaments css */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Bebas Neue", sans-serif; */
+    /* font-family: "Boldonse", sans-serif; */
+
+
+
+   }
+  
+   
+   .matches {
+    width: 100%;
+    min-height: 250px;
+    /* margin-bottom: 20px; */
+    /* background-color: #000000; */
+    color: white;
+    padding-left:10px ;
+    padding-right: 10px;
+
+   
+   }
+   .main{
+   
+    background-color: rgb(12, 12, 12);
+    /* border: 1px solid white; */
+
+   }
+  .main:hover{
+    background-color: #000000;
+  }
+   
+   .matches .img-1 {
+    background-color: aqua;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   .matches .img-2 {
+    background-color: rgb(89, 255, 0);
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   .matches img {
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 120%;
+    object-fit: cover;
+   }
+   
+   @media (max-width: 767px) {
+    .matches {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .matches .img-1,
+    .matches .img-2 {
+      width: 110px;
+      height: 110px;
+      margin-top: 12px;
+    }
+   }
+
+   /* animation */
+   
+   .img-1, .img-2 {
+    position: relative;
+}
+
+.img-1::before, 
+.img-2::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(0deg, transparent, transparent, #00ff00);
+    border-radius: 50%;
+    animation: rotate 2s linear infinite;
+}
+
+.img-1 img, 
+.img-2 img {
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.img-1::before,
+.img-2::before {
+    border: 3px solid transparent;
+    border-top: 3px solid #00ff00;
+    box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+}

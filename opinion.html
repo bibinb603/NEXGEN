@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opinion</title>
+    <link rel="stylesheet" href="./opinion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+     <!-- Bootstrap CSS  -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+     crossorigin="anonymous"
+   />
+
+   <!-- Font Awesome -->
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
+
+   <!-- Google Fonts  -->
+   <link
+     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100..700&display=swap"
+     rel="stylesheet"
+   />
+
+   <!-- Animate.css  -->
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+
+   <!-- jQuery  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+   <!-- Popper.js  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+
+   <!-- GSAP  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+   <!-- GSAP ScrollTrigger  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+   <!-- Bootstrap JavaScript  -->
+   <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+     crossorigin="anonymous"
+   ></script>
+</head>
+<body style="background-color: black;">
+    <div>
+        <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="./IMG/2-removebg-preview.png" alt="Logo" />
+          </a>
+  
+          <!-- Toggler -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Nav Links -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav fw-medium">
+              <li class="nav-item">
+                <a class="nav-link  me-lg-4" href="#">Home</a>
+              </li>
+              <!-- CATEGORY DROPDOWN -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle me-lg-4"
+                  href="#"
+                  id="categoryDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                  <li><a class="dropdown-item" href="#">News & Updates</a></li>
+                  <li><a class="dropdown-item" href="#">Game Reviews</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >E-sports & Competitive Gaming</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./opinion.html">Opinion & Features</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="#">Article</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="#">Author</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="#">Contact</a>
+              </li>
+  
+              <!-- Mobile Search -->
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="#" id="mobileSearch">
+                  <i class="fas fa-search"></i>
+                </a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="#">Subcribe</a>
+              </li>
+            </ul>
+          </div>
+  
+          <!-- Desktop Search -->
+          <div class="d-none d-lg-block ms-auto">
+            <a class="nav-link search-icon" href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="cont">
+        <h1 class="floating">Gaming Culture: A Digital Revolution Beyond Entertainment</h1>
+        
+        <div class="section" data-aos="fade-up">
+            <a href="op1.html"><h2><span class="emoji">🕹️</span> The Rise of Gaming Culture</h2></a>
+            <p>From arcade machines in the 1980s to immersive virtual reality experiences today, gaming culture has witnessed a remarkable transformation. Initially perceived as a niche hobby, gaming has now embedded itself into mainstream society.</p>
+        </div>
+    
+        <div class="section" data-aos="fade-up" >
+            <a href="op2.html"><h2><span class="emoji">🎮</span> Gaming: More Than Just a Game</h2></a>
+            <p>Gaming is no longer just about playing; it is about connecting. Online multiplayer games allow people to collaborate, compete, and form friendships with individuals from diverse backgrounds.</p>
+        </div>
+    
+        <div class="section" data-aos="fade-up" >
+            <a href=""><h2><span class="emoji">🏆</span> The Esports Boom</h2></a>
+            <p>The competitive gaming scene has exploded into a billion-dollar industry, drawing millions of viewers worldwide. Esports tournaments now fill stadiums, proving that gaming is no longer confined to a solitary activity but a spectator sport with an enthusiastic fan base.</p>
+        </div>
+    
+        <div class="section" data-aos="fade-up">
+            <a href=""><h2><span class="emoji">⚠️</span> Challenges in Gaming Culture</h2></a>
+            <p>Despite its growth, gaming culture is not without challenges. Toxicity in online communities, issues of inclusivity, and gaming addiction are some of the concerns that need addressing.</p>
+        </div>
+    
+        <div class="section" data-aos="fade-up" >
+            <a href=""><h2><span class="emoji">🚀</span> The Future of Gaming Culture</h2></a>
+            <p>Looking ahead, gaming culture will continue to evolve with advancements in technology. Virtual reality (VR), augmented reality (AR), and artificial intelligence (AI) are set to redefine gaming experiences, making them more immersive and interactive.</p>
+        </div>
+    
+        <button class="cta">Join the Discussion</button>
+    
+        <div class="spacer"></div>
+        <div class="circle"><img src="https://static.vecteezy.com/system/resources/previews/045/686/337/non_2x/console-game-controller-3d-item-free-png.png" alt="" height="100px" width="100px"></div>
+        <div class="box"><img src="./opinionimages/png3.png" alt="" height="100px" width="100px"></div>
+        <div class="png4"><img src="./opinionimages/png4.png" alt="" height="100px" width="100px"></div>
+        <div class="png5"><img src="./opinionimages/png5.png" alt="" height="200px" width="200px">
+       
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./opinion.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

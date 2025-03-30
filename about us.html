@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - NexGen Gaming Magazine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #0a0a1a;
+      color: #e0e0ff;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* About page specific styles */
+    .nexgen-about {
+      position: relative;
+      padding: 80px 0;
+      overflow: hidden;
+    }
+
+    .nexgen-about-header {
+      text-align: center;
+      margin-bottom: 60px;
+      position: relative;
+    }
+
+    .nexgen-about-title {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      background: linear-gradient(90deg, #5a5cda, #a651f7);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
+
+    .nexgen-about-subtitle {
+      font-size: 1.1rem;
+      color: #8d8dff;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .nexgen-about-section {
+      margin-bottom: 70px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .nexgen-about-section-title {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #c2c2ff;
+      position: relative;
+      display: inline-block;
+    }
+
+    .nexgen-about-section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 40px;
+      height: 3px;
+      background: linear-gradient(90deg, #5a5cda, #a651f7);
+    }
+
+    .nexgen-about-text {
+      margin-bottom: 20px;
+      color: #b3b3e6;
+      font-size: 1rem;
+    }
+
+    .nexgen-about-feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .nexgen-about-feature {
+      background: rgba(15, 17, 35, 0.6);
+      border: 1px solid rgba(90, 92, 218, 0.3);
+      border-radius: 10px;
+      padding: 30px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .nexgen-about-feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(90, 92, 218, 0.2);
+      border-color: rgba(90, 92, 218, 0.6);
+    }
+
+    .nexgen-about-feature h3 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      color: #c2c2ff;
+    }
+
+    .nexgen-about-feature p {
+      color: #b3b3e6;
+      font-size: 0.95rem;
+    }
+
+    .nexgen-about-feature::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background: linear-gradient(to bottom, #5a5cda, #a651f7);
+    }
+
+    .nexgen-about-team {
+      background: rgba(15, 17, 35, 0.6);
+      border-radius: 10px;
+      padding: 40px;
+      border: 1px solid rgba(90, 92, 218, 0.3);
+    }
+
+    .nexgen-about-join {
+      text-align: center;
+      margin-top: 60px;
+      padding: 50px 30px;
+      background: linear-gradient(135deg, rgba(15, 17, 35, 0.8), rgba(31, 27, 66, 0.8));
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(90, 92, 218, 0.3);
+    }
+
+    .nexgen-about-join h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .nexgen-about-join p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      color: #b3b3e6;
+    }
+
+    .nexgen-btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background: linear-gradient(90deg, #5a5cda, #a651f7);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .nexgen-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(90, 92, 218, 0.4);
+    }
+
+    .nexgen-btn::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: all 0.5s ease;
+    }
+
+    .nexgen-btn:hover::after {
+      left: 100%;
+    }
+
+    .nexgen-about-tagline {
+      text-align: center;
+      font-style: italic;
+      color: #8d8dff;
+      margin-top: 60px;
+      font-size: 1.2rem;
+    }
+
+    /* Decorative elements */
+    .nexgen-decoration {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .nexgen-glow-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.15;
+    }
+
+    .nexgen-glow-orb-1 {
+      top: 10%;
+      right: -100px;
+      width: 400px;
+      height: 400px;
+      background: #5a5cda;
+      animation: float 20s ease-in-out infinite;
+    }
+
+    .nexgen-glow-orb-2 {
+      bottom: 10%;
+      left: -150px;
+      width: 500px;
+      height: 500px;
+      background: #a651f7;
+      animation: float 25s ease-in-out infinite reverse;
+    }
+
+    .nexgen-grid-lines {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: 40px 40px;
+      background-image: 
+          linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      opacity: 0.2;
+    }
+
+    @keyframes float {
+      0% { transform: translate(0, 0); }
+      50% { transform: translate(-20px, 20px); }
+      100% { transform: translate(0, 0); }
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .nexgen-about-header {
+        margin-bottom: 40px;
+      }
+      
+      .nexgen-about-title {
+        font-size: 2.2rem;
+      }
+      
+      .nexgen-about-feature-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .nexgen-about-section {
+        margin-bottom: 50px;
+      }
+
+      .nexgen-about-team {
+        padding: 30px 20px;
+      }
+    }
+    .nexgen-footer {
+      position: relative;
+      background: linear-gradient(to bottom, #0f1123, #1f1b42);
+      color: #e0e0ff;
+      overflow: hidden;
+      padding: 30px 0;
+      font-family: 'Montserrat', sans-serif;
+      z-index: 1;
+      border-top: 1px solid rgba(90, 92, 218, 0.3);
+    }
+
+    .nexgen-footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+      z-index: 5;
+    }
+
+    /* Bottom section with copyright */
+    .nexgen-bottom-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nexgen-copyright {
+      font-size: 0.85rem;
+      color: #8d8dff;
+    }
+
+    .nexgen-bottom-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .nexgen-bottom-links a {
+      color: #8d8dff;
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.2s ease;
+    }
+
+    .nexgen-bottom-links a:hover {
+      color: #ffffff;
+    }
+
+    /* Decorative elements */
+    .nexgen-footer-decoration {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .nexgen-glow-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.15;
+    }
+
+    .nexgen-glow-orb-1 {
+      top: -100px;
+      right: -50px;
+      width: 300px;
+      height: 300px;
+      background: #5a5cda;
+      animation: float 20s ease-in-out infinite;
+    }
+
+    .nexgen-glow-orb-2 {
+      bottom: -150px;
+      left: -80px;
+      width: 400px;
+      height: 400px;
+      background: #a651f7;
+      animation: float 25s ease-in-out infinite reverse;
+    }
+
+    .nexgen-grid-lines {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: 40px 40px;
+      background-image: 
+          linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      opacity: 0.2;
+    }
+
+    @keyframes float {
+      0% { transform: translate(0, 0); }
+      50% { transform: translate(-20px, 20px); }
+      100% { transform: translate(0, 0); }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 576px) {
+      .nexgen-bottom-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .nexgen-bottom-links {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="nexgen-about">
+    <div class="container">
+      <!-- About Header -->
+      <header class="nexgen-about-header">
+        <h1 class="nexgen-about-title">About NexGen Gaming Magazine</h1>
+        <p class="nexgen-about-subtitle">Pushing the boundaries of gaming media since 2025</p>
+      </header>
+
+      <!-- Our Story Section -->
+      <section class="nexgen-about-section">
+        <h2 class="nexgen-about-section-title">Our Story</h2>
+        <p class="nexgen-about-text">
+          Founded in 2025, NexGen Gaming Magazine emerged from a shared passion for gaming and a vision to create something different in the gaming media landscape. What began as a small collective of gaming enthusiasts has evolved into a vibrant digital platform at the forefront of gaming journalism.
+        </p>
+      </section>
+
+      <!-- Our Mission Section -->
+      <section class="nexgen-about-section">
+        <h2 class="nexgen-about-section-title">Our Mission</h2>
+        <p class="nexgen-about-text">
+          At NexGen Gaming, we're committed to delivering insightful, honest, and forward-thinking coverage of the gaming world. We believe gaming is more than just entertainment—it's culture, art, technology, and community all rolled into one dynamic medium. Our mission is to explore every facet of this incredible industry while building a platform where all gamers feel represented and heard.
+        </p>
+      </section>
+
+      <!-- What Sets Us Apart Section -->
+      <section class="nexgen-about-section">
+        <h2 class="nexgen-about-section-title">What Sets Us Apart</h2>
+        <div class="nexgen-about-feature-grid">
+          <div class="nexgen-about-feature">
+            <h3>Beyond the Headlines</h3>
+            <p>We dive deeper than just news and reviews. Our team explores the stories behind the games, the people who create them, and the communities that form around them.</p>
+          </div>
+          <div class="nexgen-about-feature">
+            <h3>Independence & Integrity</h3>
+            <p>Our reviews and opinions remain uninfluenced by industry pressure. We're committed to honest reporting that serves our readers, not publishers.</p>
+          </div>
+          <div class="nexgen-about-feature">
+            <h3>Diverse Perspectives</h3>
+            <p>Our team brings together voices from across the gaming spectrum, ensuring coverage that represents the true diversity of the gaming community.</p>
+          </div>
+          <div class="nexgen-about-feature">
+            <h3>Future-Focused</h3>
+            <p>As our name suggests, we're always looking ahead—covering emerging technologies, rising indie developers, and evolving gaming cultures before they hit the mainstream.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Coverage Section -->
+      <section class="nexgen-about-section">
+        <h2 class="nexgen-about-section-title">Our Coverage</h2>
+        <p class="nexgen-about-text">From breaking news to deep-dive features, our content spans the entire gaming ecosystem:</p>
+        <div class="nexgen-about-feature-grid">
+          <div class="nexgen-about-feature">
+            <h3>In-depth Reviews</h3>
+            <p>Comprehensive analyses that go beyond graphics and gameplay</p>
+          </div>
+          <div class="nexgen-about-feature">
+            <h3>Industry Analysis</h3>
+            <p>Making sense of trends, business moves, and technological advances</p>
+          </div>
+          <div class="nexgen-about-feature">
+            <h3>E-sports Coverage</h3>
+            <p>Following competitive gaming from grassroots to global stages</p>
+          </div>
+          <div class="nexgen-about-feature">
+            <h3>Developer Spotlights</h3>
+            <p>Conversations with the creative minds behind your favorite games</p>
+          </div>
+          <div class="nexgen-about-feature">
+            <h3>Community Stories</h3>
+            <p>Highlighting the people and communities that make gaming special</p>
+          </div>
+          <div class="nexgen-about-feature">
+            <h3>Tech Explorations</h3>
+            <p>Examining the hardware and innovations driving gaming forward</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Team Section -->
+      <section class="nexgen-about-section">
+        <h2 class="nexgen-about-section-title">Our Team</h2>
+        <div class="nexgen-about-team">
+          <p class="nexgen-about-text">
+            NexGen Gaming Magazine is powered by a diverse team of writers, editors, streamers, and industry veterans united by their passion for gaming. From retro enthusiasts to competitive players, tech specialists to narrative-focused critics, our contributors bring unique perspectives to every story we tell.
+          </p>
+        </div>
+      </section>
+
+      <!-- Join Our Community Section -->
+      <section class="nexgen-about-join">
+        <h2>Join Our Community</h2>
+        <p>
+          NexGen isn't just a publication—it's a community. We invite you to join the conversation through our forums, Discord server, social channels, and live events. Your voice matters to us, and together we're building the future of gaming media.
+        </p>
+        <a href="#" class="nexgen-btn">Join Our Discord</a>
+      </section>
+
+      <!-- Tagline -->
+      <div class="nexgen-about-tagline">
+        <p>The Future of Gaming Media starts here.</p>
+      </div>
+    </div>
+
+    <!-- Decorative elements -->
+    <div class="nexgen-decoration">
+      <div class="nexgen-glow-orb nexgen-glow-orb-1"></div>
+      <div class="nexgen-glow-orb nexgen-glow-orb-2"></div>
+      <div class="nexgen-grid-lines"></div>
+    </div>
+  </main>
+  <!-- Bottom section of footer only -->
+  <footer class="nexgen-footer">
+    <div class="nexgen-footer-container">
+      <!-- Bottom section with copyright and additional links -->
+      <div class="nexgen-bottom-section">
+        <div class="nexgen-copyright">
+          <p>&copy; 2025 NexGen Gaming Magazine. All rights reserved.</p>
+        </div>
+
+        <div class="nexgen-bottom-links">
+          <a href="#">Cookie Policy</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative elements -->
+    <div class="nexgen-footer-decoration">
+      <div class="nexgen-glow-orb nexgen-glow-orb-1"></div>
+      <div class="nexgen-glow-orb nexgen-glow-orb-2"></div>
+      <div class="nexgen-grid-lines"></div>
+    </div>
+  </footer>
+</body>
+</html>

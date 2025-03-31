@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Review 1</title>
+
+     <!-- Bootstrap CSS  -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+     crossorigin="anonymous"
+   />
+
+   <!-- Font Awesome -->
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
+
+   <!-- Google Fonts  -->
+   <link
+     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100..700&display=swap"
+     rel="stylesheet"
+   />
+
+   <!-- Animate.css  -->
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+
+   <!-- jQuery  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+   <!-- Popper.js  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+
+   <!-- GSAP  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+   <!-- GSAP ScrollTrigger  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+   <!-- Bootstrap JavaScript  -->
+   <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+     crossorigin="anonymous"
+   ></script>
+
+   <link rel="stylesheet" href="review3.css">
+</head>
+<body>
+
+    <div class="nexgen-bg-container">
+        <div class="nexgen-bg-orb nexgen-bg-orb-blue"></div>
+        <div class="nexgen-bg-orb nexgen-bg-orb-purple"></div>
+        <div class="nexgen-bg-grid"></div>
+    </div>
+
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="./IMG/2-removebg-preview.png" alt="Logo" />
+          </a>
+  
+          <!-- Toggler -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Nav Links -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav fw-medium">
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="index.html">Home</a>
+              </li>
+              <!-- CATEGORY DROPDOWN -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle me-lg-4"
+                  href="#"
+                  id="categoryDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                  <li><a class="dropdown-item" href="news.html">News & Updates</a></li>
+                  <li><a class="dropdown-item" href="review.html">Game Reviews</a></li>
+                  <li>
+                    <a class="dropdown-item" href="esports.html"
+                      >E-sports & Competitive Gaming</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="opinion.html">Opinion & Features</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="article.html">Article</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="author.html">Author</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="contact1.html">Contact</a>
+              </li>
+  
+              <!-- Mobile Search -->
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="#" id="mobileSearch">
+                  <i class="fas fa-search"></i>
+                </a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="subscribe.html">Subscribe</a>
+              </li>
+            </ul>
+          </div>
+  
+          <!-- Desktop Search -->
+          <div class="d-none d-lg-block ms-auto">
+            <a class="nav-link search-icon" href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+        </div>
+      </nav> 
+
+
+      <div class="container" style="margin-top: 150px;">
+        <div class="game-header">
+            
+            <h1 class="game-title">InZoi Early Access Review - Pretty Vacant</h1>
+            <div class="game-meta">
+                
+                <span><strong>Publisher:</strong>KRAFTON</span> |
+                <span><strong>Platforms:</strong> PC, PS5, Xbox Series X/S </span>|
+                <span><strong>Release Date:</strong> March 28, 2025</span>
+            </div>
+            <div class="rating">
+                <div class="rating-number">6/10</div>
+                
+                <div>Good</div>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <img src="./images/inzoiRev.jpg" alt="Stellar Odyssey Hero Image">
+        </div>
+        
+        <div class="review-summary">
+            <h2 class="summary-title">Review Summary</h2>
+            <p class="summary-text">Reviewing InZoi without mentioning The Sims, which is easily its most direct influence, comparison, and competitor is, quite simply, a fool's errand. There was a part of me--a very naive part, mind you--that thought it might be a bit fun to see how long I could go without making mention of the game in this review as a sort of challenge for myself. Clearly, I have already failed.
+
+                However, the context in which InZoi exists matters. Whereas the world is filled with cozy games, life sims, and plenty of other titles that reside somewhere between the two, extremely few play quite like The Sims. It goes without saying that Maxis created something extremely special back in 2000--something so creative, charming, innovative, and intricately designed that seemingly no other game studio has even attempted to put an end to its quarter-century long reign over the life-sim genre. There is no denying that the franchise's reputation has taken some hits over the years, primarily due to its perceived stagnation and parent company EA's predatory monetization tactics. As this discontent has grown, so too has the number of people looking for a viable competitor. And now, thanks to InZoi, we have a fresh-faced and utterly gorgeous new challenger.
+                
+                </p>
+        </div>
+        
+        <div class="pros-cons">
+            <div class="card pros">
+                <div class="card-title">
+                    <span>✓</span>The Good
+                </div>
+                <ul>
+                   <li>Characters and world are gorgeous</li>
+                   <li>Customization options are vast and easy to use</li>
+                   <li>Open world is malleable, living, and immersive</li>
+                   <li>Smooth performance, even on a below-average gaming PC</li>
+
+                   
+
+
+
+                
+                </ul>
+            </div>
+            
+            <div class="card cons">
+                <div class="card-title">
+                    <span>✗</span>The Bad
+                </div>
+                <ul>
+                    <li> Day-to-day gameplay leaves a lot to be desired</li>
+                    <li>Overall tone is a sterile and lacks any humor or wit</li>
+                   
+
+                   
+
+                   
+
+
+
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <p>Considering its good looks were among the first of many things that made InZoi such a highly anticipated title, I'll start by saying that it is just as mind-blowing to look at as it seems. From its UI to its city streets to its pouty-lipped, pop star-esque characters, everything about InZoi is visually remarkable. Vast amounts of customization options, an immersive and ever-changing open world, and an intense focus on making things feel true-to-life yet just slightly more grand further polish this gem. And I was relieved that, despite all its luster, the game ran perfectly fine on my less-than-great gaming PC (AMD Ryzen 5 3600/NVIDIA GeForce GTX 1660 Super). And yet, I was ultimately forced to reckon with the fact that, in my 20 or so hours with InZoi, I missed out on something incredibly important: having fun. Though InZoi is impressive, immersive, and brimming with potential, in its current state there is a sterility and lifelessness that is hard to move past. This paired with stale gameplay ultimately made InZoi a game I desperately wanted to enjoy, but seldom did.
+
+                To reiterate though, there is a lot that InZoi gets right and to be excited about. First and foremost, InZoi's character creator is stunning, and although you could easily spend hours designing your Zois and their outfits, even the premade Zois are extraordinarily designed and interesting-looking. Once I cycled through just about every option, I began to create my own Zoi and was delighted by how fun, intuitive, and robust customization was. I spent far too long playing with the game's color wheels, changing the studio lighting, filters, and backdrop to see how different tones and textures would look in different situations. Though you can't adjust features with as much detail or exaggeration as The Sims, the overall impact is significant and allows you to create vastly different-looking Zois. I love that you are able to turn on an asymmetrical mode, too, allowing you to give your digital counterparts some of the same little quirks we have.</p>
+        </div>
+
+        <div class="hero-image">
+            <img src="./images/inzoiimg2.png" alt="">
+        </div>
+
+        <div>
+            <p>This review has been a trickier one. I'm not here to declare that The Sims team should be sweating, or InZoi has "lost" or "won" this imaginary battle. It's been interesting having to constantly reframe things; I've had to intentionally take steps back to ensure I am judging InZoi entirely on its own merit and based on what is there currently while also noting its early access status, yet not allowing myself to be won over by potential. I've had to detach myself from The Sims' 25 years of innovating while also asking myself if things I noticed in InZoi felt lacking or derivative. When a piece of work is so clearly a sort of spiritual successor to a living, breathing, regularly updating behemoth, figuring out what to make of it is slightly difficult, I've found.
+
+                As a whole, my time with InZoi was underwhelming. Though I know more items and cosmetics are headed to the game and that there's plenty of time and potential for its developers to focus more on the game's social aspects, as it stands right now gameplay isn't enjoyable and I worry that InZoi won't place as much importance on its social-simulation aspects as I'd prefer. Though I'm opting to remain hopeful, after spending a few dozen hours with InZoi--and despite my absolute delight at getting the opportunity to review a game I have been eagerly waiting to play since its announcement--I've come to the conclusion that I most likely won't pick it up again until it's spent far more time in development.</p>
+        </div>
+                  <!-- From Uiverse.io by andrew-demchenk0 --> 
+                   <div style="display:flex;justify-content: space-evenly;">
+<button class="button" type="button" >
+    <span class="button__text">Upvote(9)</span>
+    <span class="button__icon"><i class="fa-solid fa-thumbs-up text-light"></i></span>
+  </button>
+
+  <!-- From Uiverse.io by Damithkumara --> 
+<button class="button2"><i class="fa-solid fa-comment"></i> View Comments(31)</button>
+</div>
+
+
+        </div>
+
+  
+
+
+         <!-- Bottom section of footer only -->
+  <footer class="nexgen-footer">
+    <div class="nexgen-footer-container">
+      <!-- Bottom section with copyright and additional links -->
+      <div class="nexgen-bottom-section">
+        <div class="nexgen-copyright">
+          <p>&copy; 2025 NexGen Gaming Magazine. All rights reserved.</p>
+        </div>
+
+        <div class="nexgen-bottom-links">
+          <a href="#">Cookie Policy</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Decorative elements -->
+    <div class="nexgen-footer-decoration">
+      <div class="nexgen-glow-orb nexgen-glow-orb-1"></div>
+      <div class="nexgen-glow-orb nexgen-glow-orb-2"></div>
+      <div class="nexgen-grid-lines"></div>
+    </div>
+  </footer>
+
+     
+    
+</body>
+</html>

@@ -544,6 +544,7 @@ z-index: 5;
     border-radius: 50%;
     color: #c5c5e2;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .nexgen-social-icon:hover {

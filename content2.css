@@ -1,0 +1,446 @@
+/* Root Variables */
+:root {
+    --accent-dark: #865DFF; /* Used for headings */
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: "IBM Plex Mono", monospace;
+    min-height: 100vh;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(to right, #4b0082, #865dff);
+    padding: 10px 20px;
+    z-index: 1030;
+    height: 100px;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+    height: 80px;
+    transition: height 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    transition: 0.3s;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ffcc00;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    background-color: #4b0082;
+    border: none;
+    min-width: 200px;
+}
+
+.dropdown-menu.show {
+    display: block; /* Shown when activated */
+}
+
+.dropdown-item {
+    color: white;
+    padding: 8px 16px;
+}
+
+.dropdown-item:hover {
+    background-color: #865dff;
+    color: white;
+}
+
+/* Search Icon Styles */
+.search-icon {
+    color: white !important;
+    font-size: 1.2rem;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    position: relative;
+    right: 20px;
+}
+
+.search-icon:hover {
+    color: #ffcc00 !important;
+    transform: scale(1.1);
+}
+
+/* Back Button Container */
+.back-button-container {
+    position: absolute;
+    top: 14vh;
+    left: 0px; 
+}
+
+/* Back Button Styling */
+.back-button {
+    display: inline-block;
+    background: linear-gradient(to right, #4b0082, #865dff);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 2px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.back-button:hover {
+    background: #ffcc00;
+    color: black;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 992px) {
+    .navbar {
+        height: auto;
+        min-height: 80px;
+    }
+
+    .navbar-brand img {
+        height: 60px;
+    }
+
+    .search-icon {
+        right: 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 12px 0;
+    }
+
+    .dropdown-menu {
+        background-color: #4b0082;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .search-icon {
+        font-size: 1rem;
+        padding: 6px 12px !important;
+    }
+}
+
+/* Content Section Styles */
+.content-section {
+    padding: 0;
+    margin: 0; /* Remove extra margins for all content sections */
+}
+
+.content-section .related-box {
+    margin: 0; /* Ensure no extra space around the related box */
+}
+
+.summary-box {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.summary-title {
+    color: var(--accent-dark); 
+}
+
+.summary-box ul {
+    list-style-type: circle;
+    padding: 0;
+}
+
+.summary-box ul li {
+    margin-bottom: 10px;
+}
+
+/* Headings */
+.main-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent-dark); /* Matches the purple color */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-dark); /* Matches the purple color */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Image Container */
+.image-container img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Rating Box */
+.rating-box {
+    background-color: #ffcc00;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+    font-family: "Orbitron", sans-serif;
+}
+
+/* Paragraph Styles */
+#card-description p {
+    font-family: "Boldonse", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Centering and Styling the Carousel */
+.carousel {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-inner img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover; 
+}
+
+#imageCarousel {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#imageCarousel .carousel-inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    background-color: black; 
+}
+
+/* Transparent background with box shadow */
+.card.border-accent {
+    background-color: transparent; 
+    box-shadow: rgba(134, 93, 255, 0.5) 0px 15px 30px -5px,
+                rgba(134, 93, 255, 0.6) 0px 10px 18px -8px,
+                rgba(134, 93, 255, 0.4) 0px -12px 22px -5px;
+    border-radius: 10px;
+    padding: 10px; /* Adds spacing inside the card */
+    color: white; /* Ensures text inside the card is white */
+}
+
+/* Spacing between the main image and the card */
+.image-container + .card {
+    margin-top: 20px; /* Adds spacing between the main image and the card */
+}
+
+/* Related Title Styling */
+.related-title {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px; /* Reduce space below the title */
+    margin-top: 0; /* Remove space above the title */
+}
+
+/* Related Box Styling */
+.related-box {
+    background-color: #2c2c2c; /* Dark background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px;
+    margin: 0; /* Remove space above and below the card */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Related Content Layout */
+.related-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Image Styling */
+.related-image a {
+    display: block;
+    cursor: pointer; /* Makes the image clickable */
+}
+
+.related-image img {
+    width: 120px; /* Adjust image size */
+    height: 80px;
+    border-radius: 5px; /* Slightly rounded corners */
+    object-fit: cover; /* Ensures the image fits properly */
+    transition: transform 0.3s ease; /* Adds a hover effect */
+}
+
+.related-image a:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Text Styling */
+.related-text h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.related-text p {
+    font-size: 14px;
+    color: #b3b3b3; /* Muted text color */
+    margin: 5px 0 0;
+}
+
+/* Icon Styling */
+.related-icon {
+    margin-left: auto;
+    font-size: 20px;
+    color: #ffcc00; /* Accent color */
+}
+/* NexGen Gaming Magazine Footer Styles - Bottom Section Only */
+.nexgen-footer {
+    position: relative;
+    background: linear-gradient(to bottom, #0f1123, #1f1b42);
+    color: #e0e0ff;
+    overflow: hidden;
+    padding: 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    border-top: 1px solid rgba(90, 92, 218, 0.3);
+  }
+  
+  .nexgen-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 5;
+  }
+  
+  /* Bottom section with copyright */
+  .nexgen-bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nexgen-copyright {
+    font-size: 0.85rem;
+    color: #8d8dff;
+  }
+  
+  .nexgen-bottom-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .nexgen-bottom-links a {
+    color: #8d8dff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s ease;
+  }
+  
+  .nexgen-bottom-links a:hover {
+    color: #ffffff;
+  }
+  
+  /* Decorative elements */
+  .nexgen-footer-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  .nexgen-glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+  }
+  
+  .nexgen-glow-orb-1 {
+    top: -100px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background: #5a5cda;
+    animation: float 20s ease-in-out infinite;
+  }
+  
+  .nexgen-glow-orb-2 {
+    bottom: -150px;
+    left: -80px;
+    width: 400px;
+    height: 400px;
+    background: #a651f7;
+    animation: float 25s ease-in-out infinite reverse;
+  }
+  
+  .nexgen-grid-lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 40px 40px;
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    opacity: 0.2;
+  }
+  
+  @keyframes float {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-20px, 20px); }
+    100% { transform: translate(0, 0); }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .nexgen-bottom-section {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .nexgen-bottom-links {
+      justify-content: center;
+    }
+  }
+  

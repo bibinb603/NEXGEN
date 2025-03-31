@@ -239,3 +239,120 @@ body {
     border-top: 3px solid #00ff00;
     box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
 }
+
+/* footer-section */
+ /* NexGen Gaming Magazine Footer Styles - Bottom Section Only */
+ .nexgen-footer {
+    position: relative;
+    background: linear-gradient(to bottom, #0f1123, #1f1b42);
+    color: #e0e0ff;
+    overflow: hidden;
+    padding: 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    border-top: 1px solid rgba(90, 92, 218, 0.3);
+  }
+
+  .nexgen-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 5;
+  }
+
+  /* Bottom section with copyright */
+  .nexgen-bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nexgen-copyright {
+    font-size: 0.85rem;
+    color: #8d8dff;
+  }
+
+  .nexgen-bottom-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .nexgen-bottom-links a {
+    color: #8d8dff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s ease;
+  }
+
+  .nexgen-bottom-links a:hover {
+    color: #ffffff;
+  }
+
+  /* Decorative elements */
+  .nexgen-footer-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .nexgen-glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+  }
+
+  .nexgen-glow-orb-1 {
+    top: -100px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background: #5a5cda;
+    animation: float 20s ease-in-out infinite;
+  }
+
+  .nexgen-glow-orb-2 {
+    bottom: -150px;
+    left: -80px;
+    width: 400px;
+    height: 400px;
+    background: #a651f7;
+    animation: float 25s ease-in-out infinite reverse;
+  }
+
+  .nexgen-grid-lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 40px 40px;
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    opacity: 0.2;
+  }
+
+  @keyframes float {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-20px, 20px); }
+    100% { transform: translate(0, 0); }
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .nexgen-bottom-section {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .nexgen-bottom-links {
+      justify-content: center;
+    }
+  }

@@ -1282,7 +1282,7 @@ body {
   animation: fadeOut 0.5s forwards;
 }
 
-/* NexGen Gaming Magazine Footer Styles */
+/* NexGen  Footer section Styles */
 .nexgen-footer {
     position: relative;
     background: linear-gradient(to bottom, #0f1123, #1f1b42);
@@ -1531,6 +1531,9 @@ body {
 
 .nexgen-bottom-links a:hover {
     color: #ffffff;
+}
+a{
+    text-decoration: none;
 }
 
 /* Decorative elements */

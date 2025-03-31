@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Reviewed news</title>
+<!-- Bootstrap CSS  -->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+crossorigin="anonymous"
+/>
+
+<!-- Font Awesome -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+
+<!-- Google Fonts  -->
+<link
+href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100..700&display=swap"
+rel="stylesheet"
+/>
+
+<!-- Animate.css  -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+<!-- jQuery  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- Popper.js  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+
+<!-- GSAP  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- GSAP ScrollTrigger  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Bootstrap JavaScript  -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"
+></script>
+<link rel="stylesheet" href="best.css" />
+</head>
+<body>
+<!-- background  -->
+<div class="nexgen-bg-container">
+  <div class="nexgen-bg-orb nexgen-bg-orb-blue"></div>
+  <div class="nexgen-bg-orb nexgen-bg-orb-purple"></div>
+  <div class="nexgen-bg-grid"></div>
+</div>
+
+<!-- Navbar  -->
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container-fluid">
+  <!-- Logo -->
+  <a class="navbar-brand" href="#">
+    <img src="./IMG/2-removebg-preview.png" alt="Logo" />
+  </a>
+
+  <!-- Toggler -->
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Nav Links -->
+  <div
+    class="collapse navbar-collapse justify-content-center"
+    id="navbarNav"
+  >
+    <ul class="navbar-nav fw-medium">
+      <li class="nav-item">
+        <a class="nav-link me-lg-4" href="#">Home</a>
+      </li>
+      <!-- CATEGORY DROPDOWN -->
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link active dropdown-toggle me-lg-4"
+          href="#"
+          id="categoryDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Category
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+          <li><a class="dropdown-item" href="#">News & Updates</a></li>
+          <li><a class="dropdown-item" href="#">Game Reviews</a></li>
+          <li>
+            <a class="dropdown-item" href="#"
+              >E-sports & Competitive Gaming</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Opinion & Features</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link me-lg-4" href="#">Article</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link me-lg-4" href="#">Author</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link me-lg-4" href="#">Contact</a>
+      </li>
+
+      <!-- Mobile Search -->
+      <li class="nav-item d-lg-none">
+        <a class="nav-link" href="#" id="mobileSearch">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link me-lg-4" href="#">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link me-lg-4" href="#">Subscribe</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Desktop Search -->
+  <div class="d-none d-lg-block ms-auto">
+    <a class="nav-link search-icon" href="#">
+      <i class="fas fa-search"></i>
+    </a>
+  </div>
+</div>
+</nav>
+
+<div class="container">
+    <h1 class="section-title bebas-neue-regular">Best Reviewed Games of 2024</h1>
+
+    <div class="game-card" data-index="0">
+        <img src="./images/eldenRing.jpg" class="game-image" alt="Game 1" height="300px" >
+        <h2 class="game-title">Elden Ring : Shadow of the Erdtree - 10/10</h2>
+        <p class="game-description">NEXGEN's first game to earn a rare 10/10 score, in 2024 Shadow of the Erdtree is everything you love about Elden Ring and delivered with perfect execution. Completing the grand story of Elden Ring, the expansion injects new gameplay content, even tougher boss battles, and more awe-inspiring locations into an already superb game.</p>
+        <p>Available on PC, PS5, PS4, Xbox Series X|S, and Xbox One.</p>
+        <button>
+           <a href="https://www.fanatical.com/en/dlc/elden-ring-shadow-of-the-erdtree?aff_track=CJ&CJEVENT=3d6f8d2b0e4211f0830a01be0a18ba73&utm_source=CJ&cj_pid=100770772&cj_aid=13797872">See on Fanatical</a> 
+        </button>
+    </div>
+
+    <div class="game-card" data-index="1">
+        <img src="./images/metaphor.png" class="game-image" alt="Game 2" height="300px">
+        <h2 class="game-title">Metaphor ReFantazio - 10/10</h2>
+        <p class="game-description">Atlus has been firing on all cylinders over the last couple of years with its Persona games, but Metaphor ReFantazio is arguably the studio at its very best. A high-fantasy adventure with engaging characters, surprising plot twists, and polished turn-based combat, Metaphor ReFantazio isn't just a masterpiece, it's an inspiring reminder of the power of fantasy.</p>
+        <p>Available on PC, PS5, PS4, and Xbox Series X|S.</p>
+        <button>
+           <a href="https://www.amazon.com/Metaphor-ReFantazio-Launch-PlayStation-5/dp/B0D2FY9H73?tag=gamespottrx00122-20&th=1">See on Amazon</a> 
+        </button>
+    </div>
+
+    <div class="game-card" data-index="2">
+        <img src="./images/astroBot.png" class="game-image" alt="Game 3" height="300px">
+        <h2 class="game-title">Astro Bot - 9/10</h2>
+        <p class="game-description">Astro's Playroom has been one of the best and free games on PS5 consoles for years, and with Astro Bot, Team Asobi has cemented its position as one of Sony's best first-party studios. A thrilling adventure that is effortlessly charming, Astro Bot feels consistently fun to play thanks to its strong platforming core, a mountain of secrets, and outstanding use of the DualSense controller which makes you feel like you're part of Astro's journey.</p>
+        <p>Available on PS5.</p>
+        <button>
+           <a href="https://www.amazon.com/dp/B0D5SM3K4Q?tag=gamespottrx00122-20">See on Amazon</a> 
+        </button>
+    </div>
+
+    <div class="game-card" data-index="2">
+        <img src="./images/animalWell.jpg" class="game-image" alt="Game 4" height="300px">
+        <h2 class="game-title">Animal Well - 9/10</h2>
+        <p class="game-description">It might look like a cute metroidvania at first glance, but the deeper you venture into Animal Well, the more surreal it becomes as you find yourself driven to reach the end. Created by solo developer Billy Basso, it's a game of constant surprises as you find yourself driven to explore yet another room in its neon-soaked world.</p>
+        <p>Available on PC, PS5, and Switch.</p>
+        <button>
+            <a href="https://store.steampowered.com/app/813230/ANIMAL_WELL/">See on Steam</a>
+        </button>
+    </div>
+
+    <div class="game-card" data-index="2">
+        <img src="./images/balatro.jpg" class="game-image" alt="Game 5" height="300px">
+        <h2 class="game-title">Balatro - 9/10</h2>
+        <p class="game-description">Just when you think you've seen every possible combination from the roguelite genre, a game like Balatro comes along to deliver a pleasant surprise. Rapid-fire rounds of poker combined with deep deck-building mechanics and layers of intricacy beneath its deceptively simple facade, Balatro goes all in on its concept and is difficult to put down once it sinks its fangs into your free time.</p>
+        <p>Available on PC, PS5, PS4, Xbox Series X|S, Xbox One, and Switch.</p>
+        <button>
+           <a href="https://www.fanatical.com/en/game/balatro?aff_track=CJ&CJEVENT=2e4f3afa0e4311f081a101c70a18b8f8&utm_source=CJ&cj_pid=100770772&cj_aid=13797872"> See on Fanatical</a>
+        </button>
+    </div>
+
+    <div class="game-card" data-index="2">
+        <img src="./images/destiny2.jpg" class="game-image" alt="Game 6" height="300px">
+        <h2 class="game-title">Destiny 2: The Final Shape - 9/10</h2>
+        <p class="game-description">There was a lot of pressure on Bungie to deliver a satisfying conclusion to Destiny's Light and Darkness Saga, but The Final Shape didn't just live up to those expectations, it stuck the landing with style. A thrilling story, impactful gameplay changes, and a finale that united its community helped push Destiny 2 to new heights.</p>
+        <p>Available on PC, PS5, PS4, Xbox Series X|S, and Xbox One.</p>
+        <button>
+           <a href="https://www.fanatical.com/en/dlc/destiny-2-the-final-shape?aff_track=CJ&CJEVENT=477472ae0e4311f080a701be0a18b8f6&utm_source=CJ&cj_pid=100770772&cj_aid=13797872">See on Fanatical</a> 
+        </button>
+    </div>
+
+    <div class="game-card" data-index="2">
+        <img src="./images/dragonsDrama.jpg" class="game-image" alt="Game 7" height="300px">
+        <h2 class="game-title">Dragon's Dogma 2 - 9/10</h2>
+        <p class="game-description">12 years after the first game came out, Dragon's Dogma 2 builds on the best parts of that sweeping fantasy tale to deliver a magical open-world RPG. It might not be the most innovative sequel, but those core strengths are enhanced by emergent moments, technological leaps, and varied gameplay to create a thrilling sense of adventure.</p>
+        <p>Available on PC, PS5, and Xbox Series X|S.</p>
+        <button>
+           <a href="https://www.amazon.com/Dragons-Dogma-2-PS5-PlayStation-5/dp/B0CP349RP1?tag=gamespottrx00122-20">See on Amazon</a> 
+        </button>
+    </div>
+
+    <div class="game-card" data-index="2">
+        <img src="./images/hades.jpg" class="game-image" alt="Game 8" height="300px">
+        <h2 class="game-title">Hades 2 - 9/10</h2>
+        <p class="game-description">Even in early access, Hades 2 is already shaping up to be a strong game-of-the-year contender. Launching with a ton of content and right out of the gate, developer Supergiant Games has expanded on the ideas of the first game with an even deeper combat system and an engrossing story.</p>
+        <p>Available on PC.</p>
+        <button>
+           <a href="https://store.steampowered.com/app/1145350/Hades_II/">See on Steam</a> 
+        </button>
+    </div>
+
+    <div class="game-card" data-index="2">
+        <img src="./images/hellDivers.jpg" class="game-image" alt="Game 9" height="300px">
+        <h2 class="game-title">Helldivers 2 - 9/10</h2>
+        <p class="game-description">Switching from a top-down twin-stick shooter design to a third-person perspective, Helldivers 2 is an action-packed adventure across alien planets. In a crowded live-service environment, developer Arrowhead has delivered a fun romp that's best enjoyed with friends, enhanced by satisfying gunplay, and feels constantly fresh thanks to some clever design.</p>
+        <p>Available on PC and PS5.</p>
+        <button>
+            <a href="https://www.fanatical.com/en/game/helldivers-2?aff_track=CJ&CJEVENT=8794fb240e4311f081a101c80a18b8f8&utm_source=CJ&cj_pid=100770772&cj_aid=13797872">See on Fanatical</a>
+        </button>
+    </div>
+
+    <div class="game-card" data-index="2">
+        <img src="./images/indianaJones.jpg" class="game-image" alt="Game 10" height="300px">
+        <h2 class="game-title">Indiana Jones and the Great Circle - 9/10</h2>
+        <p class="game-description">Wolfenstein developer MachineGames has cracked the code for creating the quintessential Indiana Jones adventure, as the developer nails the assignment for bringing the scrappy explorer to life. The Great Circle has mystery and mayhem, an exciting story that'll keep you hooked, and it successfully captures the spirit of the legendary archeologist with its whips, wits, and two-fisted gameplay.</p>
+        <p> Available on PC and Xbox Series X|S.</p>
+        <button>
+            <a href="https://www.amazon.com/Indiana-Jones-Great-Circle-Xbox-X/dp/B0DDRCNCHC?tag=gamespottrx00122-20">See on Amazon</a>
+        </button>
+    </div>
+
+   
+</div>
+
+<img src="./images/char4-removebg-preview.png" class="floating-character character-right" alt="Floating Character 1">
+<img src="./images/character2-removebg-preview.png" class="floating-character character-left" alt="Floating Character 2">
+<img src="./images/chara3-removebg-preview.png" class="floating-character character-left2" alt="Floating Character 3">
+<img src="./images/char5-removebg-preview.png" class="floating-character character-right2" alt="Floating Character 4">
+
+
+  <!-- Bottom section of footer only -->
+  <footer class="nexgen-footer">
+    <div class="nexgen-footer-container">
+      <!-- Bottom section with copyright and additional links -->
+      <div class="nexgen-bottom-section">
+        <div class="nexgen-copyright">
+          <p>&copy; 2025 NexGen Gaming Magazine. All rights reserved.</p>
+        </div>
+
+        <div class="nexgen-bottom-links">
+          <a href="#">Cookie Policy</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative elements -->
+    <div class="nexgen-footer-decoration">
+      <div class="nexgen-glow-orb nexgen-glow-orb-1"></div>
+      <div class="nexgen-glow-orb nexgen-glow-orb-2"></div>
+      <div class="nexgen-grid-lines"></div>
+    </div>
+  </footer>
+
+<script>
+
+let mm = gsap.matchMedia();
+
+
+    gsap.from(".section-title", {
+        opacity: 0,
+        y: -50,
+        duration: 1,
+        ease: "power3.out"
+    });
+
+    gsap.utils.toArray(".game-card").forEach((card, index) => {
+        gsap.fromTo(card, 
+            { x: index % 2 === 0 ? -100 : 100, opacity: 0 }, 
+            { 
+                x: 0, 
+                opacity: 1, 
+                duration: 1, 
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 85%",
+                    end: "top 15%",
+                    toggleActions: "play none none reverse"
+                }
+            }
+        );
+    });
+    mm.add("(max-width: 1023px)", () => {
+gsap.set(".floating-character", { display: "none" });
+});
+    gsap.to(".character-left,.character-right2", {
+        y: 50,
+        x:50,
+        duration: 3,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut"
+    });
+
+    gsap.to(".character-right,.character-left2", {
+        y: -50,
+        x:-50,
+        duration: 3,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut"
+    });
+
+</script>
+
+</body>
+</html>

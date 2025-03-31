@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esports News</title>
+<!-- Bootstrap CSS  -->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+crossorigin="anonymous"
+/>
+
+<!-- Font Awesome -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+
+<!-- Google Fonts  -->
+<link
+href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100..700&display=swap"
+rel="stylesheet"
+/>
+
+<!-- Animate.css  -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+<!-- jQuery  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- Popper.js  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+
+<!-- GSAP  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- GSAP ScrollTrigger  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Bootstrap JavaScript  -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"
+></script>
+<link rel="stylesheet" href="./esportsNews.css" />
+</head>
+<body>
+<!-- background  -->
+<div class="nexgen-bg-container">
+  <div class="nexgen-bg-orb nexgen-bg-orb-blue"></div>
+  <div class="nexgen-bg-orb nexgen-bg-orb-purple"></div>
+  <div class="nexgen-bg-grid"></div>
+</div>
+
+<!-- Navbar  -->
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container-fluid">
+  <!-- Logo -->
+  <a class="navbar-brand" href="#">
+    <img src="./IMG/2-removebg-preview.png" alt="Logo" />
+  </a>
+
+  <!-- Toggler -->
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Nav Links -->
+  <div
+    class="collapse navbar-collapse justify-content-center"
+    id="navbarNav"
+  >
+    <ul class="navbar-nav fw-medium">
+      <li class="nav-item">
+        <a class="nav-link me-lg-4" href="index.html">Home</a>
+      </li>
+      <!-- CATEGORY DROPDOWN -->
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link active dropdown-toggle me-lg-4"
+          href="#"
+          id="categoryDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Category
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+          <li><a class="dropdown-item" href="news.html">News & Updates</a></li>
+          <li><a class="dropdown-item" href="review.html">Game Reviews</a></li>
+          <li>
+            <a class="dropdown-item" href="epsorts.html"
+              >E-sports & Competitive Gaming</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="opinion.html">Opinion & Features</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link me-lg-4" href="article.html">Article</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link me-lg-4" href="author.html">Author</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link me-lg-4" href="contact.html">Contact</a>
+      </li>
+
+      <!-- Mobile Search -->
+      <li class="nav-item d-lg-none">
+        <a class="nav-link" href="#" id="mobileSearch">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link me-lg-4" href="login.html">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link me-lg-4" href="subscribe.html">Subscribe</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Desktop Search -->
+  <div class="d-none d-lg-block ms-auto">
+    <a class="nav-link search-icon" href="#">
+      <i class="fas fa-search"></i>
+    </a>
+  </div>
+</div>
+</nav>
+
+<section class="container section1" style="text-align: justify" >
+
+    <h1 class="text-danger bebas-neue-regular" >Esports Conclave 2025: KRAFTON along with other key players to shape India's gaming future</h1>
+    <p>The Esports Conclave 2025 will serve as a milestone event, fostering critical discussions and paving the way for India’s dominance in the global esports arena.</p>
+    <p style="color: gray;">Written By: Saumya Nigam <br>
+        New Delhi <br>
+        Published: March 31, 2025 11:24 IST</p>
+
+    <div>
+        <img src="./images/esportsHeroimg.webp" alt="" class="img-fluid">
+    </div>
+
+    <div style="text-align: justify;margin-top: 50px;">
+    <p>The Physical Education Foundation of India (PEFI), a National Sports Promotion Organization (NSPO) under the Ministry of Youth Affairs & Sports, has partnered with KRAFTON India, with Invest India as the knowledge partner, to host the inaugural Esports Conclave 2025. Scheduled for April 1 in New Delhi, this event will bring together government officials, policymakers, industry pioneers, and esports professionals to discuss the future of India's esports industry.</p>
+    <p>With India emerging as one of the fastest-growing esports markets, the conclave will focus on:
+        <ul>
+            <li>  Boosting international tournaments</li>
+            <li>Strengthening the Indian game development ecosystem</li>
+            <li> Attracting investments and generating jobs</li>
+            <li>Expanding esports infrastructure</li>
+            <li>  Aligning with the Aatmanirbhar Bharat vision</li>
+        </ul>
+    Industry leaders will also unveil a comprehensive Esports framework recommendation to the government, outlining the need for stronger regulations, industry recognition, and a roadmap to establish India as a global esports leader.</p>
+
+    <p><h4>Industry leaders on Esports growth</h4> <br>
+        Dr. Piyush Jain, Secretary, PEFI, emphasized the event's importance, stating, "Esports is a booming industry with immense potential. This conclave will unite policymakers, gamers, and industry leaders to shape India's future in global esports."
+        </p>
+
+        <div class="grayed-out">
+            <p>
+            Sean Hyunil Sohn, CEO, KRAFTON India, highlighted esports' growing influence, saying, "With esports now recognized in major sporting events like the Asian Games and the upcoming Olympic Esports Games 2027, Indian gamers have a chance to shine on the world stage. We are committed to building a structured and globally competitive esports ecosystem."</p>
+
+<p>India's Esports industry poised for growth
+With the Indian gaming industry projected to reach USD 7.5 billion by FY28, growing at a CAGR of 20 per cent, esports is set to become a key pillar of India's digital economy.</p> 
+        </div>
+    </div>
+    
+    <div class="premium-box">
+        <h3 style="color: blueviolet;font-weight: bold;">Keep reading for free!</h3>
+        <p>Stay informed with The NexGen! Register now and gain access to Non-Premium News Articles, Real-time updates and breaking news.</p>
+        <p>Already a subscriber? <a href="login.html" class="login-link">Login</a></p>
+        <a href="signup.html" class="subscription-button">SIGN UP TO UNLOCK</a>
+        <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+        <p>Learn more about The NexGen subscription</p>
+    </div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer  -->
+<footer class="nexgen-footer mt-5">
+    <div class="nexgen-footer-container">
+      <!-- Top section with logo and main links -->
+      <div class="nexgen-top-section">
+        <div class="nexgen-logo-container">
+          <!-- Logo placeholder - replace with your actual logo -->
+          <div class="nexgen-logo-placeholder">
+            <!-- Replace this with your actual logo image -->
+            <img
+              src="./IMG/2-removebg-preview.png"
+              alt="NexGen Gaming Logo"
+            />
+          </div>
+          <p class="nexgen-tagline">The Future of Gaming Media</p>
+        </div>
+
+        <div class="nexgen-footer-nav">
+          <div class="nexgen-footer-column">
+            <h3 class="nexgen-footer-heading">Explore</h3>
+            <ul class="nexgen-footer-links">
+              <li><a href="#">Latest News & Updates</a></li>
+              <li><a href="#">Game Reviews</a></li>
+              <li><a href="#">E-sports & Competitive Gaming</a></li>
+              <li><a href="#">Opinion & Features</a></li>
+            </ul>
+          </div>
+
+          <div class="nexgen-footer-column">
+            <h3 class="nexgen-footer-heading">Community</h3>
+            <ul class="nexgen-footer-links">
+              <li><a href="#">Forums</a></li>
+              <li><a href="#">Discord</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Contests</a></li>
+              <li><a href="#">Submit News</a></li>
+            </ul>
+          </div>
+
+          <div class="nexgen-footer-column">
+            <h3 class="nexgen-footer-heading">Company</h3>
+            <ul class="nexgen-footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Middle section with newsletter and social links -->
+      <div class="nexgen-middle-section">
+        <div class="nexgen-newsletter">
+          <h3 class="nexgen-footer-heading">Level Up Your Inbox</h3>
+          <p>
+            Subscribe for weekly gaming news, reviews, newsletter and exclusive content.
+          </p>
+          <form class="nexgen-newsletter-form">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="nexgen-social">
+          <h3 class="nexgen-footer-heading">Follow Us</h3>
+          <div class="nexgen-social-icons">
+            <a href="#" class="nexgen-social-icon" aria-label="Twitter/X">
+                <i class="fa-brands fa-x-twitter" style="font-size: 20px;"></i>
+            </a>
+            <a href="#" class="nexgen-social-icon" aria-label="Instagram">
+                <i class="fa-brands fa-instagram" style="font-size: 20px;"></i>
+            </a>
+            <a href="#" class="nexgen-social-icon" aria-label="YouTube">
+                <i class="fa-brands fa-youtube" style="font-size: 20px;"></i>
+            </a>
+            <a href="#" class="nexgen-social-icon" aria-label="Twitch">
+                <i class="fa-brands fa-twitch" style="font-size: 20px;"></i>
+            </a>
+            <a href="#" class="nexgen-social-icon" aria-label="Discord">
+                <i class="fa-brands fa-discord" style="font-size: 20px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom section with copyright and additional links -->
+      <div class="nexgen-bottom-section">
+        <div class="nexgen-copyright">
+          <p>&copy; 2025 NexGen Gaming Magazine. All rights reserved.</p>
+        </div>
+
+        <div class="nexgen-bottom-links">
+          <a href="#">Cookie Policy</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative elements -->
+    <div class="nexgen-footer-decoration">
+      <div class="nexgen-glow-orb nexgen-glow-orb-1"></div>
+      <div class="nexgen-glow-orb nexgen-glow-orb-2"></div>
+      <div class="nexgen-grid-lines"></div>
+    </div>
+  </footer> 
+
+    
+    
+    
+</body>
+</html>

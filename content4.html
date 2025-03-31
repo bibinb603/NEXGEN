@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minecraft</title>
+    <!-- Bootstrap CSS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Animate.css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- jQuery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Popper.js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js">    </script>
+
+    <!-- GSAP  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- GSAP ScrollTrigger  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Bootstrap JavaScript  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JavaScript  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Keeping the Page at beginning  -->
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+    </script>
+    <link rel="stylesheet" href="./content.css" />
+    <link rel="icon" type="image/x-icon" href="./IMG/2-removebg-preview.png" />
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./IMG/2-removebg-preview.png" alt="Logo" />
+        </a>
+        
+         <!-- Back Button -->
+         <div class="back-button-container">
+          <a href="javascript:history.back()" class="back-button">← Back</a>
+      </div>
+
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav fw-medium">
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="#">Home</a>
+            </li>
+            <!-- CATEGORY DROPDOWN -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle me-lg-4"
+                href="#"
+                id="categoryDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Category
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                <li><a class="dropdown-item" href="./news.html">News & Updates</a></li>
+                <li><a class="dropdown-item" href="./review.html">Game Reviews</a></li>
+                <li>
+                  <a class="dropdown-item" href="./esports.html">E-sports & Competitive Gaming</a></li>
+                <li><a class="dropdown-item" href="./opinion.html">Opinion & Features</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active me-lg-4" href="./article.html">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="./author.html">Author</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="./contact1.html">Contact</a>
+            </li>
+
+            <!-- Mobile Search -->
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#" id="mobileSearch">
+                <i class="fas fa-search"></i>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="./login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="./subcribe.html">Subscribe</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Desktop Search -->
+        <div class="d-none d-lg-block ms-auto">
+          <a class="nav-link search-icon" href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" style="margin-top: 120px;">
+        <!-- Section 1 -->
+        <div class="content-section">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="main-title" style="color: var(--accent-dark);">Get Ready for Minecraft's Stunning Upcoming Visual Overhaul: A Whole New Look You Won't Want to Miss!</h1>
+                    <div class="image-container">
+                        <img src="./savioImages/minecraft-vibrant-visuals.webp" alt="Minecraft">
+                    </div>
+                    <!-- Author Section -->
+                    <div class="content-section">
+                        <div class="row align-items-center mt-3">
+                            <div class="col-auto">
+                                <img src="https://i.pinimg.com/736x/1b/2e/31/1b2e314e767a957a44ed8f992c6d9098.jpg" alt="Author Image" class="rounded-circle" style="width: 40px; height: 40px;">
+                            </div>
+                            <div class="col">
+                                <span class="text-light">By <strong>Rebekah Valentine</strong></span>
+                                <span class="text-light">— Published 8 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center border-accent">
+                        <div class="image-container">
+                            <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/12/mixcollage-23-dec-2024-10-05-am-3839.jpg?q=49&fit=crop&w=310&h=460&dpr=2" alt="Minecraft" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <span class="rating-box">8.9/10</span>
+                            <p class="card-text mt-2">Minecraft</p>
+                            <button class="btn btn-outline-light btn-sm">♡ Favorite</button>
+                            <button class="btn btn-outline-light btn-sm">Wishlist</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="content-section">
+            <div class="summary-box">
+                <h3 class="summary-title">SUMMARY</h3>
+                <ul>
+                    <li>Minecraft is showing off its "Vibrant Visuals" update, bringing stunning graphical improvements to the sandbox game.</li>
+                    <li>The update will make major changes to the game's lighting effects and visual fidelity, improving textures and shadow effects.</li>
+                    <li>Minecraft is also gearing up to introduce multiple new mobs, including new Cows, Chickens, and a new friendly Ghast mob.</li>
+                </ul>
+            </div>
+            <p>
+              Minecraft has officially unveiled the "Vibrant Visuals" update to the game's graphics, featuring stunning new textures, visual effects, and shadows within the beloved sandbox game. A major part of the massively successful sandbox survival game's popularity since its original release comes from Minecraft's unique and striking visual style, with its blocky textures and world design. Mojang and Microsoft have often looked to update the game's graphics, both by adding colorful and unique in-game blocks and revamping the game's graphical engines. Now, the next update looks to be making significant upgrades to its visual presentation.
+            </p>
+            <p>With Minecraft's overwhelming success, many fans have looked to give their own spin on the game's graphics. Minecraft is home to a seemingly endless wealth of different texture packs and graphical mods, looking to improve the looks of the game from more realistic styles to odes to other games and franchises. The game has even toyed with the idea of official updates to its graphical style, with the infamous "Super Duper Graphics" Pack being shelved in 2019 to the disappointment of many fans. Minecraft is now looking to completely overhaul its graphical systems with some major new updates.</p>
+
+        <!-- Related Section -->
+        <div class="content-section">
+          <h4 class="related-title">RELATED</h4>
+          <div class="related-box">
+              <div class="related-content mt-0 mb-0">
+                  <div class="related-image">
+                  <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/03/minecraft-aotearoa-new-zealand-dlc-title.jpg?q=49&fit=crop&w=422&h=268&dpr=2" alt="Minecraft">
+                  </div>
+                  <div class="related-text">
+                      <h5>Minecraft Releases Surprise New DLC</h5>
+                      <p>
+                        Minecraft releases a surprise new DLC, introducing a variety of new locations and activities for players to explore and engage with.
+                      </p>
+                  </div>
+                  <div class="related-icon">
+                      <i class="fas fa-comment"></i>
+                  </div>
+              </div>
+          </div>
+      </div>
+            <p>Minecraft officially unveiled its "Vibrant Visuals" update as part of the game's March 2025 "Minecraft LIVE" presentation. The showcase introduces massive overhauls to many aspects of Minecraft's graphical engines, ranging from improved textures and particle effects to lighting effects like shadows and the light cast by the sun. The video even shows off major changes within Minecraft's underwater settings, featuring a more true-to-life, murkier effect with the reflection of sunlight within the water. Minecraft's Vibrant Visuals update is set to arrive first to the game's "Bedrock" edition, with the update said to be coming to Java platforms later.</p>
+        </div>
+
+ <!-- Section 3 -->
+ <div class="content-section">
+  <h2 class="sub-title text-center" style="color: var(--accent-dark);">Minecraft Reveals Stunning New "Vibrant Visuals" Update</h2>
+   <!-- Yt Link -->
+   <div class="iframe-container" style="display: flex; justify-content: center; margin: 20px 0;">
+    <iframe 
+        width="100%" 
+        height="650" 
+        src="https://www.youtube.com/embed/5zcZJcXRdw0?si=_o9hghRkQtE0zmEG" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+    </iframe>
+</div>
+  <p>The extensive visual showcase featured a deep dive into the effects of Minecraft's new lighting systems. The trailer featured mobs' eyes glowing in the dark, showing off Spider and Enderman eyes shining within a dimly-lit setting. Shadows were another particularly major focus within the video presentation, showing how shadows of mobs would shift when moving between blocks and throughout the in-game day. Mojang also revealed an important aspect of the "Vibrant Visuals" update, both being backwards-compatible with pre-existing Minecraft worlds and running locally rather than server-wide.</p>
+        <!-- Carousel Section -->
+<div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/03/minecraft-vibrant-visuals-update-1.jpg?q=49&fit=crop&w=750&h=422&dpr=2" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+            <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/03/minecraft-vibrant-visuals-update-2.jpg?q=49&fit=crop&w=750&h=422&dpr=2" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+            <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/03/minecraft-vibrant-visuals-update-3.jpg?q=49&fit=crop&w=750&h=422&dpr=2" alt="Image 3">
+        </div>
+        <div class="carousel-item">
+            <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/03/minecraft-vibrant-visuals-update-4.jpg?q=49&fit=crop&w=750&h=422&dpr=2" alt="Image 4">
+        </div>
+        <div class="carousel-item">
+            <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/03/minecraft-vibrant-visuals-update-5.jpg?q=49&fit=crop&w=750&h=422&dpr=2" alt="Image 5">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+        <!-- Section 4 -->
+        <div class="content-section">
+            <p>
+              That journey towards Minecraft’s new look was further detailed by Maddie Psenka, senior product manager on Vibrant Visuals:
+            </p>
+            <p>
+              “I think it's been a journey for a while. Something that we've wanted to do for the game. There has been past projects that we've had around graphics and wanting to do this kind of update, but I think this time we really wanted to take the space to build the foundations for this new mode. Not getting too ahead of things, making sure things were cross-platform and were really strong so we could build on top of that and release that with the community. We really wanted to give players what they wanted. We know this kind of visual update is something that they've been asking for a bit.”
+            </p>
+            <p>
+              “We weren't going as fast as we could on PC to make things look really great and call it done”, Psenka continued. “We wanted to make sure it worked on mobile, worked on console. There's a lot of complexities of course, as you can imagine when jumping across platforms and the different backends there. But it's something that we really took our time with to put something forward that we really are proud of.”
+            </p>
+            <p>
+              Minecraft's new Vibrant Visuals were not the only thing teased by Mojang with its newest presentation. The half-hour-long broadcast revealed several new features coming to the game with its next major update, including a plethora of new mobs. Minecraft will be adding new versions of several of the game's farm mobs with new Cows and Chickens, as well as a friendly version of Minecraft's Ghast mob to the game. Minecraft looks to be making a slew of changes with its next update that should majorly shake up the beloved sandbox game.
+            </p>
+        </div>
+    </div>
+    </div>
+        <!-- Bottom section of footer only -->
+  <footer class="nexgen-footer">
+    <div class="nexgen-footer-container">
+      <!-- Bottom section with copyright and additional links -->
+      <div class="nexgen-bottom-section">
+        <div class="nexgen-copyright">
+          <p>&copy; 2025 NexGen Gaming Magazine. All rights reserved.</p>
+        </div>
+
+        <div class="nexgen-bottom-links">
+          <a href="#">Cookie Policy</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative elements -->
+    <div class="nexgen-footer-decoration">
+      <div class="nexgen-glow-orb nexgen-glow-orb-1"></div>
+      <div class="nexgen-glow-orb nexgen-glow-orb-2"></div>
+      <div class="nexgen-grid-lines"></div>
+    </div>
+  </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

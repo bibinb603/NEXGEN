@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexGen</title>
+    <!-- Bootstrap CSS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Animate.css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- jQuery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Popper.js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+
+    <!-- GSAP  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- GSAP ScrollTrigger  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- footer-link -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+
+    <!-- Bootstrap JavaScript  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./matches.css" />
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./matches-image/2-removebg-preview.png" alt="Logo" />
+        </a>
+
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav fw-medium">
+            <li class="nav-item">
+              <a class="nav-link active me-lg-4" href="./index.html">Home</a>
+            </li>
+            <!-- CATEGORY DROPDOWN -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle me-lg-4"
+                href="#"
+                id="categoryDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Category
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                <li><a class="dropdown-item" href="./news.html">News & Updates</a></li>
+                <li><a class="dropdown-item" href="./review.html">Game Reviews</a></li>
+                <li>
+                  <a class="dropdown-item" href="./esports.html"
+                    >E-sports & Competitive Gaming</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./opinion.html">Opinion & Features</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="./article.html">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="./author.html">Author</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="./contact1.html">Contact</a>
+            </li>
+
+            <!-- Mobile Search -->
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#" id="mobileSearch">
+                <i class="fas fa-search"></i>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="./login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="./subscribe.html">Subscribe</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Desktop Search -->
+        <div class="d-none d-lg-block ms-auto">
+          <a class="nav-link search-icon" href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+      </div>
+    </nav> 
+
+<!-- mathches page -->
+<div style="margin-top: 110px;" class="container ">
+  <header>
+      <h1 style="font-weight: 800; color: purple; ">UPCOMING GAMES</h1>
+    
+  </header>
+
+  <!-- Game 1 -->
+  <div class="game-card">
+      <div class="game-image">
+          <img src="./matches-image/game1.jpeg" alt="Starfield: Shattered Space">
+      </div>
+      <div class="game-info">
+          <h2 class="game-title">Marvel 1943: Rise of Hydra</h2>
+          <span class="release-date">April 18, 2025</span>
+          <p class="game-description">
+            The team led by Uncharted's former head scribe Amy Hennig is working on a World War II adventure starring Captain America and Black Panther Azzuri, grandfather of T'Challa. The superheroes will battle Nazis/Hydra alongside the Howling Commandos' Gabriel Jones and Wakandan spy, Nanali. Despite featuring four protagonists, the game will be a linear single-player adventure that offers different viewpoints on the war. We don't know much more than that, but we're excited to learn more, hopefully sooner than later. 
+          </p>
+          <div class="animation-info">
+              <h4>Animation Highlights:</h4>
+              <p>Breathtaking zero-gravity animations with objects and debris floating through shattered dimensional rifts. Physics-based animation system allows realistic interaction with environments affected by varying planetary gravity levels.</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Game 2 -->
+  <div class="game-card">
+      <div class="game-image">
+          <img src="./matches-image/game2.jpeg" alt="Dragon Age: The Veilguard">
+      </div>
+      <div class="game-info">
+          <h2 class="game-title">Motive Studio's Iron Man Game</h2>
+          <span class="release-date">May 1, 2025</span>
+          <p class="game-description">
+            Motive Studio, the team behind Star Wars: Squadrons and the Dead Space remake, has an untitled Iron Man game in the works. This third-person, single-player action game aims to capture, per Motive, "the complexity, charisma, and creative genius of Tony Stark, enabling players to feel what it's like to truly play as Iron Man." The game's line-up includes executive producer Olivier Proulx, who served as producer on the well-received Marvel's Guardians of the Galaxy. Motive announced the game as being in pre-production, meaning it will likely be a long while before we see any actual footage of it. Iron Man will also be the first game of a longer partnership between EA and Marvel. 
+          </p>
+          <div class="animation-info">
+              <h4>Animation Highlights:</h4>
+              <p>Elemental spell-casting features fluid, character-specific animation sets with dynamic lighting effects. Companion characters utilize contextual animation systems that respond to terrain and combat situations, with over 6,000 unique combat animations.</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Game 3 -->
+  <div class="game-card">
+      <div class="game-image">
+          <img src="./matches-image/game3.jpeg" alt="Metroid Prime 4: Emergence">
+      </div>
+      <div class="game-info">
+          <h2 class="game-title">Cliffhanger's Black Panther Game</h2>
+          <span class="release-date">June 12, 2025</span>
+          <p class="game-description">
+            EA and the fledging studio Cliffhanger Games are giving Black Panther fans something they've never gotten: a video game dedicated to the king of Wakanda. Described as a story-driven third-person action game, we won't see the fruits of the Cliffhanger's efforts for some time as the project was announced very early in development. But the studio consists of veteran game designers with experience working on titles such as God of War and Middle-earth: Shadow of Mordor, so here's hoping that expertise results in an adventure worthy of the Black Panther mantle. 
+          </p>
+          <div class="animation-info">
+              <h4>Animation Highlights:</h4>
+              <p>Samus features a completely rebuilt animation skeleton allowing for unprecedented fluidity in movement transitions. New grapple beam animations include dynamic rope physics and procedural hand/arm positioning. Enemy creatures utilize adaptive AI animation that reacts to environmental damage.</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Game 4 -->
+  <div class="game-card">
+      <div class="game-image">
+          <img src="./matches-image/game4.jpeg" alt="Fable">
+      </div>
+      <div class="game-info">
+          <h2 class="game-title">Marvel's Wolverine</h2>
+          <span class="release-date">August 8, 2025</span>
+          <p class="game-description">
+            Not content with only tackling Spider-Man, Insomniac shocked the gaming world by announcing it’s also making a Wolverine game. We know little about this exciting project outside of a brief cinematic teaser trailer. Insomniac confirmed it will have a mature tone and that it takes place in the same universe as its Spider-Man games. Eagle-eyed fans also found subtle easter eggs in the trailer hinting at the Hulk. Insomniac nailed Spidey, so we're confident Logan will be treated with the same reverence. 
+          </p>
+          <div class="animation-info">
+              <h4>Animation Highlights:</h4>
+              <p>Facial animation system captures micro-expressions with over 150 distinct emotional states. NPCs feature life-simulation animation cycles that respond to weather, time of day, and player reputation. Magic casting combines hand-crafted animations with procedural particle effects.</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Game 5 -->
+  <div class="game-card">
+      <div class="game-image">
+          <img src="./matches-image/game5.png" alt="Silent Hill: Remnants">
+      </div>
+      <div class="game-info">
+          <h2 class="game-title">Marvel's Blade</h2>
+          <span class="release-date">September 26, 2025</span>
+          <p class="game-description">
+            Arkane Lyon, the studio behind the Dishonored series and Deathloop, is taking a big swing by tackling its first licensed superhero game. Of all the heroes it could have chosen, we're pleasantly surprised it chose Marvel's resident vampire hunter. In another first for the studio, the game will be a third-person adventure that sees Blade using his, well, blade to cut down hordes of vampires taking over Paris. Tack on the high likelihood of Arkane implementing its signature immersive sim elements, and we can't wait to take a bite out of this one.
+          </p>
+          <div class="animation-info">
+              <h4>Animation Highlights:</h4>
+              <p>Reality-shifting transitions feature unsettling body horror animations with seamless mesh deformations. Monster designs utilize an innovative "wrong movement" animation system that creates unnatural, disturbing motion patterns. Character stress is reflected through subtle animation changes in posture and movement speed.</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Game 6 -->
+  <div class="game-card">
+      <div class="game-image">
+          <img src="./matches-image/game6.webp" alt="Assassin's Creed: Shadows">
+      </div>
+      <div class="game-info">
+          <h2 class="game-title"> Deliverance II</h2>
+          <span class="release-date">October 31, 2025</span>
+          <p class="game-description">
+              Ubisoft's feudal Japan adventure finally arrives this fall, featuring dual protagonists Yasuke, an African samurai, and Naoe, a shinobi assassin. Players will navigate the turbulent Sengoku period, alternating between Yasuke's direct combat approach and Naoe's stealth expertise. With the most historically accurate recreation of 16th century Japan ever in a video game and refined stealth mechanics, Shadows represents an exciting new chapter for the franchise.
+          </p>
+          <div class="animation-info">
+              <h4>Animation Highlights:</h4>
+              <p>Combat animations created in collaboration with martial arts experts specializing in historical Japanese fighting styles. Parkour system features over 2,000 unique contextual animations for different architectural styles found in feudal Japan. Stealth kills include character-specific animations based on weapon choice and position.</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Game 7 -->
+  <div class="game-card">
+      <div class="game-image">
+          <img src="./matches-image/game7.jpeg" alt="Mass Effect: Nebula">
+      </div>
+      <div class="game-info">
+          <h2 class="game-title">Knights in Tight Spaces </h2>
+          <span class="release-date">December 5, 2025</span>
+          <p class="game-description">
+              BioWare's second major release of the year takes players to a previously unexplored region of the Mass Effect universe. Set decades after the Reaper War, players command Captain Solana Vael of the Alliance vessel Normandy SR-3 on a mission to investigate strange signals from beyond the known relay network. With a diverse crew of new and returning species, expanded ship customization, and moral choices that will shape the future of the galaxy, Nebula aims to reignite the passion of Mass Effect fans worldwide.
+          </p>
+          <div class="animation-info">
+              <h4>Animation Highlights:</h4>
+              <p>New alien species feature unique skeletal rigs with custom animation sets for species-specific movement patterns. Zero-G combat introduces weightless animation transitions with thruster-assisted positioning. Conversation system now includes dynamic group animations with multiple characters interacting simultaneously.</p>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- footer-section -->
+  <!-- Bottom section of footer only -->
+  <footer class="nexgen-footer  ">
+    <div class="nexgen-footer-container    ">
+      <!-- Bottom section with copyright and additional links -->
+      <div class="nexgen-bottom-section">
+        <div class="nexgen-copyright">
+          <p>&copy; 2025 NexGen Gaming Magazine. All rights reserved.</p>
+        </div>
+
+        <div class="nexgen-bottom-links">
+          <a href="#">Cookie Policy</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+      </div>
+    </div>
+
+  <!--  Decorative elements -->
+     <div class="nexgen-footer-decoration">
+      <div class="nexgen-glow-orb nexgen-glow-orb-1"></div>
+      <div class="nexgen-glow-orb nexgen-glow-orb-2"></div>
+      <div class="nexgen-grid-lines"></div>
+    </div>
+  </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexGen - Tournament Recaps</title>
+    <link rel="stylesheet" href="./esports.css" />
+    <!-- Bootstrap CSS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts - Orbitron -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Animate.css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- jQuery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Popper.js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+
+    <!-- GSAP  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- GSAP ScrollTrigger  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Bootstrap JavaScript  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body style="background-color: black;">
+    <!-- background  -->
+    <div class="nexgen-bg-container">
+        <div class="nexgen-bg-orb nexgen-bg-orb-blue"></div>
+        <div class="nexgen-bg-orb nexgen-bg-orb-purple"></div>
+        <div class="nexgen-bg-grid"></div>
+      </div>
+
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./IMG/2-removebg-preview.png" alt="Logo" />
+        </a>
+
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav fw-medium">
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="index.html">Home</a>
+            </li>
+            <!-- CATEGORY DROPDOWN -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle me-lg-4"
+                href="#"
+                id="categoryDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Category
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                <li><a class="dropdown-item" href="news.html">News & Updates</a></li>
+                <li><a class="dropdown-item" href="review.html">Game Reviews</a></li>
+                <li>
+                  <a class="dropdown-item" href="esports.html"
+                    >E-sports & Competitive Gaming</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="opinion.html">Opinion & Features</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="article.html">Article</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="author.html">Author</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="contact1.html">Contact</a>
+            </li>
+
+            <!-- Mobile Search -->
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="#" id="mobileSearch">
+                <i class="fas fa-search"></i>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-4" href="subscribe.html">Subscribe</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Desktop Search -->
+        <div class="d-none d-lg-block ms-auto">
+          <a class="nav-link search-icon" href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+      <h1>Tournament Recaps</h1>
+      <p>
+        Catch up on all the action from recent gaming tournaments. Watch
+        highlights, analysis, and full match recaps from the biggest esports
+        events around the world.
+      </p>
+    </div>
+  </section>
+
+   <!-- Featured Video -->
+   <section class="featured-section">
+    <h2 class="section-title">Featured Recap</h2>
+    <div class="featured-video">
+      <div class="featured-video-player">
+        <!-- YouTube iframe for featured video -->
+        <iframe
+          src="https://www.youtube.com/embed/wIiPWv47V2A?si=hjhlLVkovPlULxlR"
+          title="T1 vs GenG: Epic Finals Showdown"
+          allowfullscreen
+        ></iframe>
+        <div class="game-tag">League of Legends</div>
+      </div>
+      <div class="featured-video-info">
+        <span class="featured-tag">World Championship</span>
+        <h3 class="featured-title">
+          T1 vs GenG: Epic Finals Showdown - LoL World Championship
+        </h3>
+        <p class="featured-description">
+          Relive the most intense moments from the League of Legends World
+          Championship Finals. This recap features all the key plays, team
+          fights, and game-changing moments that led to T1's historic
+          victory over GenG in a nail-biting 5-game series.
+        </p>
+        <!-- <a href="#" class="watch-button">Watch Full Recap</a> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos Grid -->
+  <section class="videos-container">
+    <h2 class="section-title">Latest Recaps</h2>
+    <div class="videos-grid">
+      <!-- Video 1 -->
+      <div class="video-card">
+        <div class="video-container">
+          <!-- YouTube iframe for Valorant video -->
+          <iframe
+            src="https://www.youtube.com/embed/HHaJiF55gIw?si=tKYvmKTw7u9n73aI"
+            title="Sentinels vs LOUD: Masters Showdown"
+            allowfullscreen
+          ></iframe>
+          <div class="game-tag">Valorant</div>
+        </div>
+        <div class="video-info">
+          <h3 class="video-title">Sentinels vs LOUD: Masters Showdown</h3>
+          <div class="video-meta">
+            <span>March 26, 2025</span>
+            <span>12K views</span>
+          </div>
+          <p class="video-description">
+            The clash between Sentinels and LOUD in Valorant Masters
+            delivered incredible moments and tactical brilliance.
+          </p>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-card">
+        <div class="video-container">
+          <!-- YouTube iframe for CS2 video -->
+          <iframe
+            src="https://www.youtube.com/embed/Jw6yZn38OKY?si=jk61EFHkkYX6ELv6"
+            title="Vitality Takes CS2 Major Trophy"
+            allowfullscreen
+          ></iframe>
+          <div class="game-tag">CS2</div>
+        </div>
+        <div class="video-info">
+          <h3 class="video-title">Vitality Takes CS2 Major Trophy</h3>
+          <div class="video-meta">
+            <span>March 25, 2025</span>
+            <span>9.5K views</span>
+          </div>
+          <p class="video-description">
+            Team Vitality's incredible run to victory at the CS2 Major
+            highlighted by ZywOo's dominating performance.
+          </p>
+        </div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="video-card">
+        <div class="video-container">
+          <!-- YouTube iframe for Dota 2 video -->
+          <iframe
+            src="https://www.youtube.com/embed/MjIHhJkhZ7I?si=qy12wqiyrj1EbM0H"
+            title="Team Spirit's Miracle Comeback - ESL One"
+            allowfullscreen
+          ></iframe>
+          <div class="game-tag">Dota 2</div>
+        </div>
+        <div class="video-info">
+          <h3 class="video-title">
+            Team Spirit's Miracle Comeback - ESL One
+          </h3>
+          <div class="video-meta">
+            <span>March 22, 2025</span>
+            <span>7.8K views</span>
+          </div>
+          <p class="video-description">
+            Team Spirit pulled off an unbelievable comeback against PSG.LGD
+            in the ESL One grand finals.
+          </p>
+        </div>
+      </div>
+
+      <!-- Video 4 -->
+      <div class="video-card">
+        <div class="video-container">
+          <!-- YouTube iframe for Call of Duty video -->
+          <iframe
+            src="https://www.youtube.com/embed/l9tmffgK9bw?si=9JiUMSV_k_5C6kCo"
+            title="OpTic vs Atlanta FaZe: CDL Major III Finals"
+            allowfullscreen
+          ></iframe>
+          <div class="game-tag">Call of Duty</div>
+        </div>
+        <div class="video-info">
+          <h3 class="video-title">
+            OpTic vs Atlanta FaZe: CDL Major III Finals
+          </h3>
+          <div class="video-meta">
+            <span>March 20, 2025</span>
+            <span>6.2K views</span>
+          </div>
+          <p class="video-description">
+            OpTic Gaming earned a hard-fought victory against Atlanta FaZe
+            in the Call of Duty League Major III Finals.
+          </p>
+        </div>
+      </div>
+
+      <!-- Video 5 -->
+      <div class="video-card">
+        <div class="video-container">
+          <!-- YouTube iframe for LoL video -->
+          <iframe
+            src="https://www.youtube.com/embed/Ia5Rr9EtlJM?si=gvfZ_ZYxUeAjcwiB"
+            title="Cloud9 vs Team Liquid: LCS Spring Finals"
+            allowfullscreen
+          ></iframe>
+          <div class="game-tag">League of Legends</div>
+        </div>
+        <div class="video-info">
+          <h3 class="video-title">
+            Cloud9 vs Team Liquid: LCS Spring Finals
+          </h3>
+          <div class="video-meta">
+            <span>March 18, 2025</span>
+            <span>8.7K views</span>
+          </div>
+          <p class="video-description">
+            Cloud9 secured the LCS Spring Split championship with a
+            convincing victory over Team Liquid.
+          </p>
+        </div>
+      </div>
+
+      <!-- Video 6 -->
+      <div class="video-card">
+        <div class="video-container">
+          <!-- YouTube iframe for Valorant video 2 -->
+          <iframe
+            src="https://www.youtube.com/embed/B-iJiSck7k8?si=nufX2hfCC1_i6A35"
+            title="Fnatic's Perfect Run - VCT EMEA"
+            allowfullscreen
+          ></iframe>
+          <div class="game-tag">Valorant</div>
+        </div>
+        <div class="video-info">
+          <h3 class="video-title">Fnatic's Perfect Run - VCT EMEA</h3>
+          <div class="video-meta">
+            <span>March 15, 2025</span>
+            <span>5.9K views</span>
+          </div>
+          <p class="video-description">
+            Fnatic completed a flawless tournament run at the VCT EMEA,
+            solidifying their position as the top team in the region.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe Section -->
+  <section class="subscribe-section">
+    <h2 class="subscribe-title">For More Recaps</h2>
+    <p class="subscribe-desc">
+      Get the latest game recaps. Join the community today!
+    </p>
+    <!-- <button type="submit" class="subscribe-btn">Subscribe</button> --><!-- Button trigger modal -->
+    <button
+      type="button"
+      class="button subscribe-btn"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      <span class="button-content">More Recaps </span>
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h1
+              class="modal-title fs-5"
+              id="exampleModalLabel"
+              style="color: #865dff"
+            >
+              Unlock Full Recaps
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-dark">
+            <p class="text-light">
+              Subscribe now to get unlimited access to recaps of your
+              favorite games.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn"
+              style="background-color: #865dff"
+            >
+              Subscribe Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- fragzone heading -->
+<header class="site-header">
+    <div class="logo">FragZone</div>
+    <div class="tagline">Where Gaming Legends Tell Their Stories</div>
+</header>
+
+<!-- Featured Interview -->
+<div class="container">
+    <main class="featured-interview" id="tenz">
+      <div class="interview-header">
+        <h1 class="interview-title">
+          "Gaming Was My Escape, Now It's My Life" - Interview with TenZ
+        </h1>
+        <div class="interview-meta">
+          <span><i>🎮</i> Valorant Pro</span>
+          <span><i>📅</i> March 28, 2025</span>
+          <span><i>👤</i> By Alex Rodriguez</span>
+          <span><i>⏱️</i> 15 min read</span>
+        </div>
+      </div>
+
+      <div class="video-container">
+        <!-- YouTube iframe (using a placeholder) -->
+        <iframe
+          src="https://www.youtube.com/embed/C5KsJRj28Ag?si=4VlB1apux25t7eQE"
+          title="Interview with TenZ - Valorant Pro Player"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <!-- interview content  -->
+
+      <div class="interview-content">
+        <p>
+          In the world of competitive Valorant, few names carry as much weight
+          as Tyson "TenZ" Ngo. The Canadian prodigy has been at the forefront
+          of the tactical shooter scene since its inception, setting records
+          and redefining what it means to be a professional gamer in today's
+          digital landscape.
+        </p>
+
+        <p>
+          We sat down with TenZ to discuss his journey from a young CS:GO
+          hopeful to becoming one of the most recognizable faces in esports.
+          In this candid conversation, he opens up about the pressures of
+          fame, the evolution of his career, and what the future holds for
+          both him and the broader competitive gaming industry.
+        </p>
+
+        <h3>On Finding His Passion</h3>
+        <p>
+          "I was always that kid who would rather stay inside playing games
+          than go out," TenZ recalls with a smile. "My parents weren't
+          particularly supportive at first—they saw gaming as a distraction
+          from school. It wasn't until I started winning tournaments and
+          bringing home prize money that they began to see this could be a
+          legitimate career path."
+        </p>
+
+        <p>
+          His breakthrough came at just 16 years old, when he became the
+          youngest player to reach the highest rank in CS:GO. "That's when I
+          realized I might have what it takes to go pro. It wasn't just about
+          having fast reflexes—I understood the game at a deeper level than
+          most people my age."
+        </p>
+
+        <h3>Transitioning to Valorant</h3>
+        <p>
+          "When Valorant was announced, I saw an opportunity to get in on the
+          ground floor of something special," he explains. "CS:GO was
+          established, with veterans who had been competing for a decade.
+          Valorant was a fresh start—a chance to help define a new esport."
+        </p>
+
+        <p>
+          The risk paid off. Within months of the game's release, TenZ had
+          established himself as one of the most dominant players in North
+          America. His mechanical skill and adaptability quickly set him apart
+          from competitors who were still finding their footing in Riot's
+          tactical shooter.
+        </p>
+
+        <h3>On Mental Health and Burnout</h3>
+        <p>
+          "The hardest part of being a pro isn't the tournaments or the
+          practice—it's managing your mental health," TenZ says, his tone
+          becoming more serious. "There were times I'd practice 14 hours a
+          day, seven days a week. I thought that's what it took to stay on
+          top, but it's not sustainable."
+        </p>
+
+        <p>
+          He credits his fiancée, fellow content creator Kyedae, with helping
+          him find a healthier balance. "She helped me understand that taking
+          breaks doesn't make you weak—it makes you sustainable. Some of my
+          best performances came after I learned to give myself permission to
+          rest."
+        </p>
+
+        <h3>The Future of Competitive Gaming</h3>
+        <p>
+          "We're just scratching the surface of what esports can become," TenZ
+          says with evident excitement. "The production value, the viewership,
+          the prize pools—everything is scaling up. Kids today don't just
+          dream of being traditional athletes; they dream of being the next
+          esports star, and that's incredible to see."
+        </p>
+
+        <p>
+          When asked about his own future, TenZ is thoughtful. "I want to
+          compete as long as I can perform at the highest level. But I'm also
+          building for what comes next—content creation, coaching, maybe even
+          team ownership someday. The skills I've developed as a pro player
+          translate to so many other areas of the industry."
+        </p>
+
+<!-- gamers bio  -->
+
+        <div class="gamer-bio">
+            <div class="bio-header">
+              <img
+                src="https://prosettings.net/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=cover%2Ch=400%2Cq=85%2Cw=400/wp-content/uploads/tenz.png"
+                alt="TenZ"
+                class="bio-avatar"
+              />
+              <div class="bio-info">
+                <h3>Tyson "TenZ" Ngo</h3>
+                <p>Professional Valorant Player for Sentinels</p>
+              </div>
+            </div>
+
+            <div class="bio-text">
+                <p>
+                  Born in 2001, TenZ is a Canadian professional Valorant player
+                  who currently competes for Sentinels. Before Valorant, he played
+                  CS:GO professionally for Cloud9. Known for his incredible aim
+                  and reflexes, TenZ has consistently been ranked as one of the
+                  top Valorant players in the world since the game's release.
+                </p>
+              </div>
+
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <div class="stat-value">4.7M</div>
+                  <div class="stat-label">Twitch Followers</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-value">12</div>
+                  <div class="stat-label">Major Tournaments Won</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-value">$1.8M+</div>
+                  <div class="stat-label">Career Earnings</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-value">24</div>
+                  <div class="stat-label">Age</div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Related Interviews -->
+
+    <section class="related-interviews">
+        <h2 class="section-title">More Pro Interviews</h2>
+
+        <div class="interview-grid">
+          <div class="interview-card">
+            <img
+              src="https://imageio.forbes.com/specials-images/imageserve/5f32ef218565d43b4ab965fa/0x0.jpg?format=jpg&crop=3896,2193,x0,y27,safe&height=900&width=1600&fit=bounds"
+              alt="Shroud interview"
+              class="card-img"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Shroud: Life After Competitive Play</h3>
+              <div class="card-meta">March 15, 2025 • FPS • 12 min read</div>
+              <a href="./interview_shroud.html" class="read-more"
+                >Read Interview →</a
+              >
+            </div>
+          </div>
+
+          <div class="interview-card">
+            <img
+              src="https://media.licdn.com/dms/image/v2/C5612AQEDsaoIEl-aPA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1611667634480?e=2147483647&v=beta&t=hrn19uboHaCfRXckxn04EIS9VbrOG1C97_kYn2xGRiQ"
+              alt="Pokimane interview"
+              class="card-img"
+            />
+            <div class="card-content">
+              <h3 class="card-title">Pokimane on Building a Gaming Empire</h3>
+              <div class="card-meta">
+                March 10, 2025 • Content Creation • 18 min read
+              </div>
+              <a href="./interview_pokimane.html" class="read-more"
+                >Read Interview →</a
+              >
+            </div>
+          </div>
+
+          <div class="interview-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgolggfMWZXOlDFo_0NDjmg9fWHpnaI9l2bA&s"
+              alt="Simple interview"
+              class="card-img"
+            />
+            <div class="card-content">
+              <h3 class="card-title">
+                s1mple: The Greatest CS Player of All Time?
+              </h3>
+              <div class="card-meta">February 28, 2025 • CS2 • 20 min read</div>
+              <a href="./interview_s1mple.html" class="read-more"
+                >Read Interview →</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Subscribe Section -->
+    <section class="subscribe-section">
+        <h2 class="subscribe-title">Never Miss an Interview</h2>
+        <p class="subscribe-desc">
+          Get the latest gaming interviews, stories, and analysis delivered
+          straight to your inbox. Join the FragZone community today!
+        </p>
+        <!-- <button type="submit" class="subscribe-btn">Subscribe</button> --><!-- Button trigger modal -->
+        <button
+          type="button"
+          class="button subscribe-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          <span class="button-content">More Interviews </span>
+        </button>
+  
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+                <h1
+                  class="modal-title fs-5"
+                  id="exampleModalLabel"
+                  style="color: #865dff"
+                >
+                  Unlock Full Interviews
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body bg-dark">
+                <p>
+                  Subscribe now to get unlimited access to expert Interviews of
+                  your favorite gamers.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button
+                  type="button"
+                  class="btn"
+                  style="background-color: #865dff"
+                >
+                  Subscribe Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- footer  -->    
+<footer class="nexgen-footer mt-5">
+    <div class="nexgen-footer-container">
+      <!-- Top section with logo and main links -->
+      <div class="nexgen-top-section">
+        <div class="nexgen-logo-container">
+          <!-- Logo placeholder - replace with your actual logo -->
+          <div class="nexgen-logo-placeholder">
+            <!-- Replace this with your actual logo image -->
+            <img
+              src="./IMG/2-removebg-preview.png"
+              alt="NexGen Gaming Logo"
+            />
+          </div>
+          <p class="nexgen-tagline">The Future of Gaming Media</p>
+        </div>
+  
+        <div class="nexgen-footer-nav">
+          <div class="nexgen-footer-column">
+            <h3 class="nexgen-footer-heading">Explore</h3>
+            <ul class="nexgen-footer-links">
+              <li><a href="#">Latest News & Updates</a></li>
+              <li><a href="#">Game Reviews</a></li>
+              <li><a href="#">E-sports & Competitive Gaming</a></li>
+              <li><a href="#">Opinion & Features</a></li>
+            </ul>
+          </div>
+  
+          <div class="nexgen-footer-column">
+            <h3 class="nexgen-footer-heading">Community</h3>
+            <ul class="nexgen-footer-links">
+              <li><a href="#">Forums</a></li>
+              <li><a href="#">Discord</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Contests</a></li>
+              <li><a href="#">Submit News</a></li>
+            </ul>
+          </div>
+  
+          <div class="nexgen-footer-column">
+            <h3 class="nexgen-footer-heading">Company</h3>
+            <ul class="nexgen-footer-links">
+              <li><a href="about us.html">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Middle section with newsletter and social links -->
+      <div class="nexgen-middle-section">
+        <div class="nexgen-newsletter">
+          <h3 class="nexgen-footer-heading">Level Up Your Inbox</h3>
+          <p>
+            Subscribe for weekly gaming news, newsletter, reviews, and exclusive content.
+          </p>
+          <form class="nexgen-newsletter-form">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+  
+        <div class="nexgen-social">
+          <h3 class="nexgen-footer-heading">Follow Us</h3>
+          <div class="nexgen-social-icons">
+            <a href="#" class="nexgen-social-icon" aria-label="Twitter/X">
+                <i class="fa-brands fa-x-twitter" style="font-size: 20px;"></i>
+            </a>
+            <a href="#" class="nexgen-social-icon" aria-label="Instagram">
+                <i class="fa-brands fa-instagram" style="font-size: 20px;"></i>
+            </a>
+            <a href="#" class="nexgen-social-icon" aria-label="YouTube">
+                <i class="fa-brands fa-youtube" style="font-size: 20px;"></i>
+            </a>
+            <a href="#" class="nexgen-social-icon" aria-label="Twitch">
+                <i class="fa-brands fa-twitch" style="font-size: 20px;"></i>
+            </a>
+            <a href="#" class="nexgen-social-icon" aria-label="Discord">
+                <i class="fa-brands fa-discord" style="font-size: 20px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Bottom section with copyright and additional links -->
+      <div class="nexgen-bottom-section">
+        <div class="nexgen-copyright">
+          <p>&copy; 2025 NexGen Gaming Magazine. All rights reserved.</p>
+        </div>
+  
+        <div class="nexgen-bottom-links">
+          <a href="#">Cookie Policy</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Decorative elements -->
+    <div class="nexgen-footer-decoration">
+      <div class="nexgen-glow-orb nexgen-glow-orb-1"></div>
+      <div class="nexgen-glow-orb nexgen-glow-orb-2"></div>
+      <div class="nexgen-grid-lines"></div>
+    </div>
+  </footer>
+
+</body>
+</html>

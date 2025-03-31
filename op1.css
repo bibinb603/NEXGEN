@@ -1,0 +1,460 @@
+/* Font Styles */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.boldonse-regular {
+    font-family: "Boldonse", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-400 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Global Styles */
+body {
+    background-color: #1f1d1d;
+    font-family: "IBM Plex Mono", monospace;
+    color: white;
+}
+
+/* Button Font */
+.btn {
+    font-family: "Orbitron", sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(to right, #4b0082, #865dff);
+    padding: 10px 20px;
+    z-index: 1030;
+    height: 100px;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+    height: 80px;
+    transition: height 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    transition: 0.3s;
+    position: relative;
+}
+
+/*  Dropdown Styles  */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ffcc00;
+}
+
+.navbar-nav .dropdown-menu {
+    background: rgba(255, 255, 255, 0.9);
+    background-color: #4b0082;
+    
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+    transition: 0.3s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #865dff;
+    color: white;
+}
+
+/* Search Icon Styles */
+.search-icon {
+    color: white !important;
+    font-size: 1.2rem;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    position: relative;
+    right: 20px;
+}
+
+.search-icon:hover {
+    color: #ffcc00 !important;
+    transform: scale(1.1);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 992px) {
+    .navbar {
+        height: auto;
+        min-height: 80px;
+    }
+
+    .navbar-brand img {
+        height: 60px;
+    }
+
+    .search-icon {
+        right: 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 12px 0;
+    }
+
+    /* Dropdown Mobile s */
+    .dropdown-menu {
+        background-color: #4b0082;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .search-icon {
+        font-size: 1rem;
+        padding: 6px 12px !important;
+    }
+}
+
+body {
+  
+    background: linear-gradient(90deg, #1a1a2e, #16213e);
+    color: #fff;
+    text-align: center;
+    /* padding: 20px; */
+    overflow-x: hidden;
+}
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cont {
+    padding-top: 120px; /* Adjusted for fixed navbar */
+    margin-bottom: 2rem;
+}
+
+.cont h1 {
+    font-size: 2.5em;
+    animation: glow 2s infinite alternate;
+    color: white;
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 0 15px;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #fff, 0 0 10px #0ff; }
+    50% { text-shadow: 0 0 10px #fff, 0 0 20px #0ff; }
+    100% { text-shadow: 0 0 5px #fff, 0 0 10px #0ff; }
+}
+
+.cont .floating {
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Text Styles */
+p {
+    color: white;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    color: white;
+    margin: 2rem 0 1.5rem;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Image Styles */
+.opimg {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Row and Column Adjustments */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-sm-4, .col-sm-8 {
+    padding: 0 15px;
+    margin-bottom: 2rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+    .navbar {
+        height: auto;
+        min-height: 80px;
+    }
+
+    .navbar-brand img {
+        height: 60px;
+    }
+
+    .search-icon {
+        right: 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 12px 0;
+    }
+
+    .dropdown-menu {
+        background-color: #4b0082;
+        text-align: center;
+    }
+
+    .cont h1 {
+        font-size: 2em;
+        margin-top: 90px;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    h3 { 
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .search-icon {
+        font-size: 1rem;
+        padding: 6px 12px !important;
+    }
+    
+    .cont {
+        padding-top: 100px;
+    }
+
+    .cont h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+    
+    .col-sm-4, .col-sm-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .opimg {
+        display: block;
+        margin: 0 auto 1.5rem;
+        max-height: 250px;
+    }
+    
+    ul {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cont h1 {
+        font-size: 1.5em;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    p, ul li {
+        font-size: 0.95rem;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    .opimg {
+        max-height: 200px;
+    }
+}
+ /* NexGen Gaming Magazine Footer Styles - Bottom Section Only */
+ .nexgen-footer {
+    position: relative;
+    background: linear-gradient(to bottom, #0f1123, #1f1b42);
+    color: #e0e0ff;
+    overflow: hidden;
+    padding: 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    border-top: 1px solid rgba(90, 92, 218, 0.3);
+  }
+
+  .nexgen-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 5;
+  }
+
+  /* Bottom section with copyright */
+  .nexgen-bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nexgen-copyright {
+    font-size: 0.85rem;
+    color: #8d8dff;
+  }
+
+  .nexgen-bottom-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .nexgen-bottom-links a {
+    color: #8d8dff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s ease;
+  }
+
+  .nexgen-bottom-links a:hover {
+    color: #ffffff;
+  }
+
+  /* Decorative elements */
+  .nexgen-footer-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .nexgen-glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+  }
+
+  .nexgen-glow-orb-1 {
+    top: -100px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background: #5a5cda;
+    animation: float 20s ease-in-out infinite;
+  }
+
+  .nexgen-glow-orb-2 {
+    bottom: -150px;
+    left: -80px;
+    width: 400px;
+    height: 400px;
+    background: #a651f7;
+    animation: float 25s ease-in-out infinite reverse;
+  }
+
+  .nexgen-grid-lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 40px 40px;
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    opacity: 0.2;
+  }
+
+  @keyframes float {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-20px, 20px); }
+    100% { transform: translate(0, 0); }
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .nexgen-bottom-section {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .nexgen-bottom-links {
+      justify-content: center;
+    }
+  }
+  /* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:#1f1d1d ; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#4b0082; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:#865dff; 
+  }

@@ -1,0 +1,434 @@
+/* Font Styles */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.boldonse-regular {
+    font-family: "Boldonse", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-400 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Global Styles */
+body {
+    background-color: #1f1d1d;
+    font-family: "IBM Plex Mono", monospace;
+    color: white;
+    
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* background design  */
+.nexgen-bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none; 
+    overflow: hidden;
+}
+
+/* Glowing orbs */
+.nexgen-bg-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+}
+
+.nexgen-bg-orb-blue {
+    top: 10%;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: #5a5cda; /* Blue orb */
+    animation: nexgen-bg-float 20s ease-in-out infinite;
+}
+
+.nexgen-bg-orb-purple {
+    bottom: 10%;
+    left: -150px;
+    width: 500px;
+    height: 500px;
+    background: #a651f7; /* Purple orb */
+    animation: nexgen-bg-float 25s ease-in-out infinite reverse;
+}
+
+/* Grid lines overlay */
+.nexgen-bg-grid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 40px 40px;
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    opacity: 0.2;
+}
+
+/* Animation for the floating orbs - with unique name */
+@keyframes nexgen-bg-float {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-20px, 20px); }
+    100% { transform: translate(0, 0); }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:#1f1d1d ; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#4b0082; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#865dff; 
+}
+
+/* Button Font */
+.btn {
+    font-family: "Orbitron", sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(to right, #4b0082, #865dff);
+    padding: 10px 20px;
+    z-index: 1030;
+    height: 100px;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+    height: 80px;
+    transition: height 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    transition: 0.3s;
+    position: relative;
+}
+
+/*  Dropdown Styles  */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ffcc00;
+}
+
+.dropdown-menu {
+    background: rgba(255, 255, 255, 0.9);
+    background-color: #4b0082;
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+    transition: 0.3s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #865dff;
+    color: white;
+}
+
+/* Search Icon Styles */
+.search-icon {
+    color: white !important;
+    font-size: 1.2rem;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    position: relative;
+    right: 20px;
+}
+
+.search-icon:hover {
+    color: #ffcc00 !important;
+    transform: scale(1.1);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 992px) {
+    .navbar {
+        height: auto;
+        min-height: 80px;
+    }
+
+    .navbar-brand img {
+        height: 60px;
+    }
+
+    .search-icon {
+        right: 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 12px 0;
+    }
+
+    /* Dropdown Mobile s */
+    .dropdown-menu {
+        background-color: #4b0082;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .search-icon {
+        font-size: 1rem;
+        padding: 6px 12px !important;
+    }
+}
+
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 150px;
+}
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #865dff;
+}
+.game-card {
+    background: #1e1e1e;
+   color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+}
+.game-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.game-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.game-description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+
+.floating-character {
+    position: absolute;
+    width: 150px;
+    opacity: 0.7;
+}
+.character-left {
+    left: 100px;
+    top: 10%;
+}
+.character-right {
+    right: 100px;
+    top: 30%;
+}
+.character-left2 {
+    left: 100px;
+    top: 80%;
+}
+.character-right2 {
+    right: 100px;
+    top: 70%;
+}
+
+/* From Uiverse.io by Navarog21 */ 
+button {
+width: 10em;
+position: relative;
+height: 3.5em;
+border: 3px ridge rgba(150, 93, 233, 1);
+outline: none;
+background-color: transparent;
+color: white;
+transition: 1s;
+border-radius: 0.3em;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+}
+
+button::after {
+content: "";
+position: absolute;
+top: -10px;
+left: 3%;
+width: 95%;
+height: 40%;
+background-color: #212121;
+transition: 0.5s;
+transform-origin: center;
+}
+
+button::before {
+content: "";
+transform-origin: center;
+position: absolute;
+top: 80%;
+left: 3%;
+width: 95%;
+height: 40%;
+background-color: #212121;
+transition: 0.5s;
+}
+
+button:hover::before, button:hover::after {
+transform: scale(0)
+}
+
+button:hover {
+box-shadow: inset 0px 0px 25px rgba(150, 93, 233, 1);
+}
+
+  /* NexGen Gaming Magazine Footer Styles - Bottom Section Only */
+  .nexgen-footer {
+    position: relative;
+    background: linear-gradient(to bottom, #0f1123, #1f1b42);
+    color: #e0e0ff;
+    overflow: hidden;
+    padding: 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    border-top: 1px solid rgba(90, 92, 218, 0.3);
+  }
+
+  .nexgen-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 5;
+  }
+
+  /* Bottom section with copyright */
+  .nexgen-bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nexgen-copyright {
+    font-size: 0.85rem;
+    color: #8d8dff;
+  }
+
+  .nexgen-bottom-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .nexgen-bottom-links a {
+    color: #8d8dff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s ease;
+  }
+
+  .nexgen-bottom-links a:hover {
+    color: #ffffff;
+  }
+
+  /* Decorative elements */
+  .nexgen-footer-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .nexgen-glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+  }
+
+  .nexgen-glow-orb-1 {
+    top: -100px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background: #5a5cda;
+    animation: float 20s ease-in-out infinite;
+  }
+
+  .nexgen-glow-orb-2 {
+    bottom: -150px;
+    left: -80px;
+    width: 400px;
+    height: 400px;
+    background: #a651f7;
+    animation: float 25s ease-in-out infinite reverse;
+  }
+
+  .nexgen-grid-lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 40px 40px;
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    opacity: 0.2;
+  }
+
+  @keyframes float {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-20px, 20px); }
+    100% { transform: translate(0, 0); }
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .nexgen-bottom-section {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .nexgen-bottom-links {
+      justify-content: center;
+    }
+  }

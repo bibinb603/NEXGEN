@@ -1,0 +1,592 @@
+/* Font Styles */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.boldonse-regular {
+    font-family: "Boldonse", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-400 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Global Styles */
+body {
+    background-color: #1f1d1d;
+    font-family: "IBM Plex Mono", monospace;
+    color: #f0f0f0;
+    line-height: 1.6;
+    
+}
+
+/* Button Font */
+.btn {
+    font-family: "Orbitron", sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(to right, #4b0082, #865dff);
+    padding: 10px 20px;
+    z-index: 1030;
+    height: 100px;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+    height: 80px;
+    transition: height 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    transition: 0.3s;
+    position: relative;
+}
+
+/*  Dropdown Styles  */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ffcc00;
+}
+
+.navbar-nav .dropdown-menu {
+    background: rgba(255, 255, 255, 0.9);
+    background-color: #4b0082;
+    
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+    transition: 0.3s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #865dff;
+    color: white;
+}
+
+/* Search Icon Styles */
+.search-icon {
+    color: white !important;
+    font-size: 1.2rem;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    position: relative;
+    right: 20px;
+}
+
+.search-icon:hover {
+    color: #ffcc00 !important;
+    transform: scale(1.1);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 992px) {
+    .navbar {
+        height: auto;
+        min-height: 80px;
+    }
+
+    .navbar-brand img {
+        height: 60px;
+    }
+
+    .search-icon {
+        right: 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 12px 0;
+    }
+
+    /* Dropdown Mobile s */
+    .dropdown-menu {
+        background-color: #4b0082;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .search-icon {
+        font-size: 1rem;
+        padding: 6px 12px !important;
+    }
+}
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.site-header {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4b0082;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #bbb;
+    font-style: italic;
+}
+
+/* Featured interview */
+.featured-interview {
+    margin-bottom: 60px;
+}
+
+.interview-header {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4b0082;
+    padding-bottom: 10px;
+}
+
+.interview-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.interview-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.interview-meta span {
+    display: flex;
+    align-items: center;
+}
+
+.interview-meta i {
+    margin-right: 5px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin-bottom: 30px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+.interview-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.interview-content p {
+    margin-bottom: 20px;
+}
+
+.interview-content h3 {
+    font-size: 1.5rem;
+    margin: 30px 0 15px;
+    color: #4b0082;
+}
+
+.gamer-bio {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 40px;
+    border-left: 4px solid #4b0082;
+}
+
+.bio-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bio-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4b0082;
+}
+
+.bio-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.bio-info p {
+    color: #aaa;
+    font-size: 1rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.stat-item {
+    background-color: #252525;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4b0082;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Related interviews */
+.related-interviews {
+    margin-top: 60px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
+}
+
+.interview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.interview-card {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.interview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-meta {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    color: #4b0082;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Subscribe section */
+.subscribe-section {
+    margin-top: 80px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+}
+
+.subscribe-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.subscribe-desc {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.email-input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+    background-color: #252525;
+    color: #fff;
+    outline: none;
+}
+
+.email-input::placeholder {
+    color: #777;
+}
+
+.subscribe-btn {
+    padding: 15px 25px;
+    background-color: #4b0082;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #4b0082;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .interview-title {
+        font-size: 2rem;
+    }
+    
+    .bio-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .email-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .email-input, .subscribe-btn {
+        width: 100%;
+        border-radius: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 2.2rem;
+    }
+    
+    .interview-title {
+        font-size: 1.8rem;
+    }
+    
+    .interview-content {
+        font-size: 1rem;
+    }
+    
+    .subscribe-section {
+        padding: 30px 20px;
+    }
+}
+
+ /* NexGen Gaming Magazine Footer Styles - Bottom Section Only */
+ .nexgen-footer {
+    position: relative;
+    background: linear-gradient(to bottom, #0f1123, #1f1b42);
+    color: #e0e0ff;
+    overflow: hidden;
+    padding: 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 1;
+    border-top: 1px solid rgba(90, 92, 218, 0.3);
+  }
+
+  .nexgen-footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 5;
+  }
+
+  /* Bottom section with copyright */
+  .nexgen-bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nexgen-copyright {
+    font-size: 0.85rem;
+    color: #8d8dff;
+  }
+
+  .nexgen-bottom-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .nexgen-bottom-links a {
+    color: #8d8dff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s ease;
+  }
+
+  .nexgen-bottom-links a:hover {
+    color: #ffffff;
+  }
+
+  /* Decorative elements */
+  .nexgen-footer-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .nexgen-glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+  }
+
+  .nexgen-glow-orb-1 {
+    top: -100px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background: #5a5cda;
+    animation: float 20s ease-in-out infinite;
+  }
+
+  .nexgen-glow-orb-2 {
+    bottom: -150px;
+    left: -80px;
+    width: 400px;
+    height: 400px;
+    background: #a651f7;
+    animation: float 25s ease-in-out infinite reverse;
+  }
+
+  .nexgen-grid-lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 40px 40px;
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    opacity: 0.2;
+  }
+
+  @keyframes float {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-20px, 20px); }
+    100% { transform: translate(0, 0); }
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .nexgen-bottom-section {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .nexgen-bottom-links {
+      justify-content: center;
+    }
+  }
+  /* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:#1f1d1d ; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#4b0082; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:#865dff; 
+  }

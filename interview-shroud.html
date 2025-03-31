@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FragZone | Shroud: Life After Competitive Play</title>
+   <link rel="stylesheet" href="./interview.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Bootstrap CSS  -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Google Fonts  -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100..700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Animate.css  -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- jQuery  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <!-- Popper.js  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+
+  <!-- GSAP  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- GSAP ScrollTrigger  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Bootstrap JavaScript  -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body style="background-color: #1f1d1d; color: #f8fafc;">
+    <div>
+        <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="./IMG/2-removebg-preview.png" alt="Logo" />
+          </a>
+  
+          <!-- Toggler -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Nav Links -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav fw-medium">
+              <li class="nav-item">
+                <a class="nav-link  me-lg-4" href="index.html">Home</a>
+              </li>
+              <!-- CATEGORY DROPDOWN -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle me-lg-4"
+                  href="#"
+                  id="categoryDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                  <li><a class="dropdown-item" href="news.html">News & Updates</a></li>
+                  <li><a class="dropdown-item" href="review.html">Game Reviews</a></li>
+                  <li>
+                    <a class="dropdown-item" href="esports.html"
+                      >E-sports & Competitive Gaming</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./opinion.html">Opinion & Features</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="article.html">Article</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="author.html">Author</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="contact1.html">Contact</a>
+              </li>
+  
+              <!-- Mobile Search -->
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="#" id="mobileSearch">
+                  <i class="fas fa-search"></i>
+                </a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="subscribe.html">Subcribe</a>
+              </li>
+            </ul>
+          </div>
+  
+          <!-- Desktop Search -->
+          <div class="d-none d-lg-block ms-auto">
+            <a class="nav-link search-icon" href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+        <!-- Header -->
+        <header class="site-header">
+            <div class="logo">FragZone</div>
+            <div class="tagline">Where Gaming Legends Tell Their Stories</div>
+        </header>
+        
+        <!-- Featured Interview -->
+        <main class="featured-interview">
+            <div class="interview-header">
+                <h1 class="interview-title">"From Pro Player to Content King" - Interview with Shroud</h1>
+                <div class="interview-meta">
+                    <span><i>🎮</i> FPS Legend</span>
+                    <span><i>📅</i> March 15, 2025</span>
+                    <span><i>👤</i> By Rebecca Chen</span>
+                    <span><i>⏱️</i> 12 min read</span>
+                </div>
+            </div>
+            
+            <div class="video-container">
+                <!-- YouTube iframe (using a placeholder) -->
+                <iframe src="https://www.youtube.com/embed/ORCLuPAuWZ0?si=CAefzUuRVYw2vaM8" title="Interview with Shroud - Life After Competitive Play" allowfullscreen></iframe>
+            </div>
+            
+            <div class="interview-content">
+                <p>Few gaming personalities have successfully transitioned from esports professional to content creation superstar as seamlessly as Michael "Shroud" Grzesiek. From his days as a CS:GO pro with Cloud9 to becoming one of the most watched streamers in the world, Shroud's journey represents the evolving landscape of gaming careers.</p>
+                
+                <p>In this exclusive interview, Shroud opens up about his competitive past, his decision to step away from pro play, building his streaming empire, and how he maintains his exceptional gameplay skills across multiple titles.</p>
+                
+                <h3>The Early Days and Pro Career</h3>
+                <p>"I started gaming very young, like most kids," Shroud recalls with a nostalgic smile. "But Counter-Strike really captured me. There was something about the competitive aspect, the skill ceiling being so high. I knew pretty early that I wanted to compete at the highest level."</p>
+                
+                <p>His professional breakthrough came when he joined Cloud9 in 2014. "Joining Cloud9 changed everything for me. Suddenly I was competing on international stages, representing North America against the best teams in the world. Those years were intense—traveling constantly, practicing for hours every day, the pressure of tournaments. It was exhausting but incredibly fulfilling."</p>
+                
+                <h3>The Decision to Leave Competitive Play</h3>
+                <p>"Retiring from pro play wasn't a sudden decision," Shroud explains thoughtfully. "I had been streaming alongside my competitive career, and I started to realize that I enjoyed the freedom of content creation more than the structured demands of being a pro player."</p>
+                
+                <p>He continues, "There came a point where I had to be honest with myself. My passion for the rigid schedule of practice, travel, and tournaments was waning, while my enthusiasm for streaming was growing. It wasn't about which path was easier—both require tremendous work—but about which one made me happier."</p>
+                
+                <h3>Building a Streaming Empire</h3>
+                <p>"When I first went full-time into streaming, I didn't have some grand business plan," he laughs. "I just wanted to play games I enjoyed and share that experience with viewers. The growth happened organically because I think people appreciated my gameplay and the chill atmosphere of my streams."</p>
+                
+                <p>That approach has paid dividends. With millions of followers across Twitch, YouTube, and now Kick, Shroud has built one of the most recognizable personal brands in gaming. "The platforms have changed over the years, and I've adapted when necessary. But my core philosophy remains the same—focus on high-level gameplay without unnecessary drama or gimmicks."</p>
+                
+                <h3>The "Human Aimbot" Reputation</h3>
+                <p>"The 'human aimbot' thing still makes me laugh," Shroud says with a slight shake of his head. "Look, I've put tens of thousands of hours into FPS games. When you do anything for that long, you're going to develop skills that look impressive to others. But it's not magic—it's practice, muscle memory, and experience."</p>
+                
+                <p>That skill translates across games, which has become one of Shroud's trademarks. "Each new game is a fun challenge. The fundamentals of aim, positioning, and game sense are transferable, but you have to learn the nuances of each title. That learning process keeps gaming fresh for me, even after all these years."</p>
+                
+                <h3>Looking to the Future</h3>
+                <p>"Gaming is constantly evolving, and that's what makes this industry so exciting," Shroud observes. "The rise of games like Valorant has been interesting to watch. The competitive scene is developing differently than it did for CS. And with battle royales continuing to evolve and new genres emerging, there's always something fresh to explore."</p>
+                
+                <p>As for his own future, Shroud remains open-minded. "I've invested in several gaming ventures and esports organizations. The business side of gaming is fascinating to me now. I'm interested in helping shape the industry that gave me so much. Will I ever return to competitive play? Never say never, but my focus is on content creation and business ventures for now. I'm having too much fun to change course."</p>
+                
+                <div class="gamer-bio">
+                    <div class="bio-header">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkv-lvm8smmJwOC8BujvSq0OvpNKZPFPJKBQ&s" alt="Shroud" class="bio-avatar">
+                        <div class="bio-info">
+                            <h3>Michael "Shroud" Grzesiek</h3>
+                            <p>Former CS:GO Pro & Content Creator</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bio-text">
+                        <p>Born in 1994, Shroud is a Canadian former professional CS:GO player who competed with Cloud9 before transitioning to full-time content creation. Known for his exceptional aim and mechanical skills across multiple FPS titles, he's earned the nickname "human aimbot" within the gaming community. His calm demeanor, technical precision, and ability to quickly master new games have made him one of the most respected and watched gaming personalities in the world.</p>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-value">9.8M</div>
+                            <div class="stat-label">Twitch Followers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">7.2M</div>
+                            <div class="stat-label">YouTube Subscribers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">$20M+</div>
+                            <div class="stat-label">Estimated Net Worth</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">31</div>
+                            <div class="stat-label">Age</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Related Interviews -->
+        <section class="related-interviews">
+            <h2 class="section-title">More Pro Interviews</h2>
+            
+            <div class="interview-grid">
+                <div class="interview-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgolggfMWZXOlDFo_0NDjmg9fWHpnaI9l2bA&s" alt="s1mple interview" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">"I Play to Be the Best, Nothing Less" - s1mple</h3>
+                        <div class="card-meta">February 28, 2025 • CS2 • 20 min read</div>
+                        <a href="./interview_s1mple.html" class="read-more">Read Interview →</a>
+                    </div>
+                </div>
+                
+                <div class="interview-card">
+                    <img src="https://esportsinsider.com/wp-content/uploads/2025/01/Tenz-Most-Visited-VALORANT-Player-Liquipedia.jpg" alt="TenZ interview" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">TenZ: Rising Star of Valorant</h3>
+                        <div class="card-meta">March 28, 2025 • Valorant • 15 min read</div>
+                        <a href="./interview_s1mple.html" class="read-more">Read Interview →</a>
+                    </div>
+                </div>
+                
+                <div class="interview-card">
+                    <img src="https://media.licdn.com/dms/image/v2/C5612AQEDsaoIEl-aPA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1611667634480?e=2147483647&v=beta&t=hrn19uboHaCfRXckxn04EIS9VbrOG1C97_kYn2xGRiQ" alt="Pokimane interview" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Pokimane on Building a Gaming Empire</h3>
+                        <div class="card-meta">March 10, 2025 • Content Creation • 18 min read</div>
+                        <a href="./interview_pokimane.html" class="read-more">Read Interview →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Subscribe Section -->
+        <section class="subscribe-section">
+            <h2 class="subscribe-title">Never Miss an Interview</h2>
+            <p class="subscribe-desc">Get the latest gaming interviews, stories, and analysis delivered straight to your inbox. Join the FragZone community today!</p>
+                <!-- <button type="submit" class="subscribe-btn">Subscribe</button> --><!-- Button trigger modal -->
+<button type="button" class="button subscribe-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <span class="button-content">More Interviews </span>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: #865dff;">Unlock Full Interviews</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark">
+          <p>  Subscribe now to get unlimited access to expert Interviews of your favorite gamers.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn" style="background-color: #865dff;">Subscribe Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        </section>
+    </div>
+    <!-- Bottom section of footer only -->
+  <footer class="nexgen-footer">
+    <div class="nexgen-footer-container">
+      <!-- Bottom section with copyright and additional links -->
+      <div class="nexgen-bottom-section">
+        <div class="nexgen-copyright">
+          <p>&copy; 2025 NexGen Gaming Magazine. All rights reserved.</p>
+        </div>
+
+        <div class="nexgen-bottom-links">
+          <a href="#">Cookie Policy</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative elements -->
+    <div class="nexgen-footer-decoration">
+      <div class="nexgen-glow-orb nexgen-glow-orb-1"></div>
+      <div class="nexgen-glow-orb nexgen-glow-orb-2"></div>
+      <div class="nexgen-grid-lines"></div>
+    </div>
+  </footer>
+</body>
+</html>

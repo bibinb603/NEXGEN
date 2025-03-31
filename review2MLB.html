@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLB Detailed Review</title>
+
+     <!-- Bootstrap CSS  -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+     crossorigin="anonymous"
+   />
+
+   <!-- Font Awesome -->
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
+
+   <!-- Google Fonts  -->
+   <link
+     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100..700&display=swap"
+     rel="stylesheet"
+   />
+
+   <!-- Animate.css  -->
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+
+   <!-- jQuery  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+   <!-- Popper.js  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+
+   <!-- GSAP  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+   <!-- GSAP ScrollTrigger  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+   <!-- Bootstrap JavaScript  -->
+   <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+     crossorigin="anonymous"
+   ></script>
+
+   <link rel="stylesheet" href="review2.css">
+</head>
+<body>
+
+    <div class="nexgen-bg-container">
+        <div class="nexgen-bg-orb nexgen-bg-orb-blue"></div>
+        <div class="nexgen-bg-orb nexgen-bg-orb-purple"></div>
+        <div class="nexgen-bg-grid"></div>
+    </div>
+
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="./IMG/2-removebg-preview.png" alt="Logo" />
+          </a>
+  
+          <!-- Toggler -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Nav Links -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav fw-medium">
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="index.html">Home</a>
+              </li>
+              <!-- CATEGORY DROPDOWN -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle me-lg-4"
+                  href="#"
+                  id="categoryDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                  <li><a class="dropdown-item" href="news.html">News & Updates</a></li>
+                  <li><a class="dropdown-item" href="review.html">Game Reviews</a></li>
+                  <li>
+                    <a class="dropdown-item" href="esports.html"
+                      >E-sports & Competitive Gaming</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="opinion.html">Opinion & Features</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="article.html">Article</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="author.html">Author</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="contact1.html">Contact</a>
+              </li>
+  
+              <!-- Mobile Search -->
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="#" id="mobileSearch">
+                  <i class="fas fa-search"></i>
+                </a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="subscribe.html">Subscribe</a>
+              </li>
+            </ul>
+          </div>
+  
+          <!-- Desktop Search -->
+          <div class="d-none d-lg-block ms-auto">
+            <a class="nav-link search-icon" href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+        </div>
+      </nav> 
+
+
+      <div class="container" style="margin-top: 150px;">
+        <div class="game-header">
+            
+            <h1 class="game-title">MLB The Show 25 Review - Still The MVP</h1>
+            <div class="game-meta">
+                
+                <span><strong>Publisher:</strong>MLB Advanced Media </span> |
+                <span><strong>Platforms:</strong> PS5, Xbox </span>|
+                <span><strong>Release Date:</strong> March 14, 2025</span>
+            </div>
+            <div class="rating">
+                <div class="rating-number">8/10</div>
+                
+                <div>Great</div>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <img src="./images/4464204-newproject.jpg" alt="Stellar Odyssey Hero Image">
+        </div>
+        
+        <div class="review-summary">
+            <h2 class="summary-title">Review Summary</h2>
+            <p class="summary-text">Juan Soto hopped on the subway and swapped one New York borough for another to become the highest-paid player in baseball. The Japanese phenom, Roki Sasaki, reunited with the growing list of his compatriots in Dodgers blue, making the World Series champions an even more formidable outfit. Corbin Burnes headed to the Arizona desert, the Cubs swung a trade for Kyle Tucker, and the Red Sox beefed up their rotation by acquiring ace Garrett Crotchet. It was an offseason of typical upheaval that even saw the Oakland Athletics leave their 57-year-old home for a temporary stay in Sacramento. But as the weather warms and spring training draws to a close, the return of the MLB season is just a few days away, which can only mean it's also time for the newest iteration of MLB The Show. While last year's game was one of minor iterations, MLB The Show 25 takes a few steps in the right direction by introducing a few long overdue changes to modes like Road to the Show and Franchise.</p>
+        </div>
+        
+        <div class="pros-cons">
+            <div class="card pros">
+                <div class="card-title">
+                    <span>✓</span>The Good
+                </div>
+                <ul>
+                   <li>Amateur baseball and a revised progression system elevate Road to the Show</li>
+                   <li>Defensive tweaks make fielding more engaging</li>
+                   <li> An overhauled free agency system forces you to make tough choices</li>
+                   <li>Storylines remains excellent</li>
+                   <li>Diamond Quest is a fun new Diamond Dynasty mode</li>
+
+                   
+
+
+
+                
+                </ul>
+            </div>
+            
+            <div class="card cons">
+                <div class="card-title">
+                    <span>✗</span>The Bad
+                </div>
+                <ul>
+                    <li> Ambush Hitting doesn't have much impact</li>
+                    <li>The absence of another individual player storyline is disappointing</li>
+               
+
+                    
+
+                   
+
+
+
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <p>Road to the Show (RTTS) has grown stale over the past couple of years, with little to no improvements and an irritating connection to the card-collecting mode, Diamond Dynasty. This isn't the case in The Show 25, as it severs that link and completely overhauls the opening few hours of your career with the addition of amateur baseball. Now, you begin your journey to the Major Leagues as a fresh-faced high school student. By playing well in the three available games, potentially winning a high school championship, and showcasing your talents at the MLB combine, you'll garner interest from both MLB teams and the eight different college programs included in the game, such as Vanderbilt, LSU, UCLA, and Texas. You can opt to sign with an MLB team straight out of high school as an 18-year-old--like previous years' games--or head to college for four years to further improve your attributes and, ideally, increase your draft stock.
+
+                Each college has a rating from one to five stars in "exposure," which impacts your draft status and rating among scouts, and "skill development," which determines how many upgrade tokens you'll earn to improve your ballplayer. Once you've chosen a college that fits your needs, the game fast-forwards to your senior year as you prepare to compete in the College Baseball World Series in Omaha, Nebraska. Depending on the outcome of each game, you can potentially play in all four on the way to winning the national championship, which will significantly boost your standing in the draft if you also play well enough. After signing for an MLB team, you can expect to be fast-tracked through the minor leagues, as opposed to spending more time in AA and AAA if you decided to skip college, so there are some impactful choices to consider.</p>
+        </div>
+
+        <div class="hero-image">
+            <img src="./images/MLBimg2.jpg" alt="">
+        </div>
+
+        <div>
+            <p>MLB The Show 25 plays a typically excellent game of baseball. Ambush Hitting is lackluster, but tweaks to fielding make for a more well-rounded game. Meanwhile, Road to the Show finally gets the shot in the arm it's been crying out for with the inclusion of amateur games and a reworked progression system; free agency is more engaging in Franchise, and Diamond Dynasty smartly shifts away from the restrictive Sets and Seasons model while also introducing an enjoyable new single-player mode. Whether its additions are incremental or more significant, MLB The Show 25 makes enough positive changes to justify another year out on the diamond.
+
+               
+                </p>
+        </div>
+                  <!-- From Uiverse.io by andrew-demchenk0 --> 
+                   <div style="display:flex;justify-content: space-evenly;">
+<button class="button" type="button" >
+    <span class="button__text">Upvote(1)</span>
+    <span class="button__icon"><i class="fa-solid fa-thumbs-up text-light"></i></span>
+  </button>
+
+  <!-- From Uiverse.io by Damithkumara --> 
+<button class="button2"><i class="fa-solid fa-comment"></i> View Comments(5)</button>
+</div>
+
+
+        </div>
+
+  
+
+
+         <!-- Bottom section of footer only -->
+  <footer class="nexgen-footer">
+    <div class="nexgen-footer-container">
+      <!-- Bottom section with copyright and additional links -->
+      <div class="nexgen-bottom-section">
+        <div class="nexgen-copyright">
+          <p>&copy; 2025 NexGen Gaming Magazine. All rights reserved.</p>
+        </div>
+
+        <div class="nexgen-bottom-links">
+          <a href="#">Cookie Policy</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Decorative elements -->
+    <div class="nexgen-footer-decoration">
+      <div class="nexgen-glow-orb nexgen-glow-orb-1"></div>
+      <div class="nexgen-glow-orb nexgen-glow-orb-2"></div>
+      <div class="nexgen-grid-lines"></div>
+    </div>
+  </footer>
+
+     
+    
+</body>
+</html>

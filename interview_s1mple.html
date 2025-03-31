@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FragZone | Gaming Magazine Interviews</title>
+   <link rel="stylesheet" href="./interview.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Bootstrap CSS  -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Google Fonts  -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100..700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Animate.css  -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- jQuery  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <!-- Popper.js  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+
+  <!-- GSAP  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- GSAP ScrollTrigger  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Bootstrap JavaScript  -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body style="background-color: #1f1d1d; color: #f8fafc;">
+    <div>
+        <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="./IMG/2-removebg-preview.png" alt="Logo" />
+          </a>
+  
+          <!-- Toggler -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Nav Links -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav fw-medium">
+              <li class="nav-item">
+                <a class="nav-link  me-lg-4" href="index.html">Home</a>
+              </li>
+              <!-- CATEGORY DROPDOWN -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle me-lg-4"
+                  href="#"
+                  id="categoryDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                  <li><a class="dropdown-item" href="news.html">News & Updates</a></li>
+                  <li><a class="dropdown-item" href="review.html">Game Reviews</a></li>
+                  <li>
+                    <a class="dropdown-item" href="esports.html"
+                      >E-sports & Competitive Gaming</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./opinion.html">Opinion & Features</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="article.html">Article</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="author.html">Author</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="contact1.html">Contact</a>
+              </li>
+  
+              <!-- Mobile Search -->
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="#" id="mobileSearch">
+                  <i class="fas fa-search"></i>
+                </a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="subscribe.html">Subcribe</a>
+              </li>
+            </ul>
+          </div>
+  
+          <!-- Desktop Search -->
+          <div class="d-none d-lg-block ms-auto">
+            <a class="nav-link search-icon" href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+        <!-- Header -->
+        <header class="site-header">
+            <div class="logo">FragZone</div>
+            <div class="tagline">Where Gaming Legends Tell Their Stories</div>
+        </header>
+        
+        <!-- Featured Interview -->
+        <main class="featured-interview">
+            <div class="interview-header">
+                <h1 class="interview-title">"I Play to Be the Best, Nothing Less" - Interview with s1mple</h1>
+                <div class="interview-meta">
+                    <span><i>🎮</i> CS2 Pro</span>
+                    <span><i>📅</i> February 28, 2025</span>
+                    <span><i>👤</i> By Alex Rodriguez</span>
+                    <span><i>⏱️</i> 20 min read</span>
+                </div>
+            </div>
+            
+            <div class="video-container">
+                <!-- YouTube iframe (using a placeholder) -->
+                <iframe src="https://www.youtube.com/embed/FeggpJGkiKw?si=d2D3s2QEk92wElPv" title="YouTube video player" title="Interview with s1mple - CS2 Pro Player" allowfullscreen></iframe>
+            </div>
+            
+            <div class="interview-content">
+                <p>In the pantheon of Counter-Strike legends, few names command as much respect and admiration as Oleksandr "s1mple" Kostyliev. The Ukrainian superstar has dominated the competitive CS scene for years, cementing his legacy as potentially the greatest player the game has ever seen.</p>
+                
+                <p>We had the privilege of sitting down with s1mple to discuss his extraordinary journey from a controversial young talent to becoming an esports icon. In this revealing conversation, he shares insights on his relentless pursuit of perfection, overcoming personal challenges, and what drives him to continue pushing the boundaries of what's possible in competitive gaming.</p>
+                
+                <h3>The Path to Greatness</h3>
+                <p>"I started playing Counter-Strike when I was around eight years old," s1mple recalls, leaning back in his chair. "My older brother introduced me to the game, and I immediately fell in love with it. I would spend hours watching demos of pro players, studying their movements, their decision-making. I wanted to understand everything about the game."</p>
+                
+                <p>His professional journey began at 16, but it wasn't always smooth sailing. "The early days were challenging. I had the skill, but I lacked maturity. I was banned from some competitions, and my reputation wasn't great. Looking back, those struggles shaped me into who I am today. I had to learn the hard way that talent alone isn't enough."</p>
+                
+                <h3>Joining Na'Vi and Finding Home</h3>
+                <p>"Joining Natus Vincere was a turning point in my career," he explains with visible pride. "When I first joined, we weren't immediately successful. But we believed in the project, in what we could build together. It took time, patience, and a lot of hard work, but we eventually reached the top."</p>
+                
+                <p>Under the Na'Vi banner, s1mple has achieved what many consider the pinnacle of Counter-Strike glory, including winning the PGL Major Stockholm 2021, where he was also named MVP. "Lifting that trophy with my teammates, representing my country—it's a feeling I can't describe. All those years of sacrifice felt worth it in that moment."</p>
+                
+                <h3>Mental Fortitude</h3>
+                <p>"The mental aspect of competing at the highest level is something people often underestimate," s1mple says thoughtfully. "Everyone at this level has the mechanical skill. The difference is how you handle pressure, how you respond to failure, how you stay focused when everything is on the line."</p>
+                
+                <p>He continues, "I used to get very emotional, very frustrated when things didn't go my way. But I've learned that staying calm, staying focused on solutions rather than problems, is what separates good players from great ones. My mindset now is completely different from when I started."</p>
+                
+                <h3>The Future of CS2 and Beyond</h3>
+                <p>"The transition to CS2 has been interesting. It's essentially the same game at its core, but the subtle differences make it fresh and challenging in new ways," he observes. "The meta is still evolving, and I enjoy adapting my playstyle to stay ahead of the curve. That's what keeps the game exciting after all these years."</p>
+                
+                <p>When asked about his future, s1mple smiles confidently. "I still have a lot I want to achieve. More majors, more trophies. But beyond that, I want to leave a legacy. I want to inspire the next generation of players to push themselves, to believe that with hard work and dedication, anything is possible. Eventually, I might explore coaching or ownership, but for now, my focus is on competing and winning."</p>
+                
+                <div class="gamer-bio">
+                    <div class="bio-header">
+                        <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRsMtsPWy-gf5Z6JT_H90RjdfVtnH0oq1WzKKfX0T5_R0Oit9-_Fm2H5VfrQiqqVqql52QqgfcmjyKzgYw" alt="s1mple" class="bio-avatar">
+                        <div class="bio-info">
+                            <h3>Oleksandr "s1mple" Kostyliev</h3>
+                            <p>Professional CS2 Player for Natus Vincere (Na'Vi)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bio-text">
+                        <p>Born in 1997, s1mple is a Ukrainian professional CS2 player who currently competes for Natus Vincere (Na'Vi). Widely regarded as one of the greatest Counter-Strike players of all time, he has been consistently ranked among the top players in the world for several years. Known for his extraordinary AWP skills, versatility, and ability to make game-changing plays, s1mple's impact on competitive Counter-Strike is unparalleled.</p>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-value">3.2M</div>
+                            <div class="stat-label">Twitch Followers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">21</div>
+                            <div class="stat-label">Major Tournaments Won</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">$2.4M+</div>
+                            <div class="stat-label">Career Earnings</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">28</div>
+                            <div class="stat-label">Age</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Related Interviews -->
+        <section class="related-interviews">
+            <h2 class="section-title">More Pro Interviews</h2>
+            
+            <div class="interview-grid">
+                <div class="interview-card">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5f32ef218565d43b4ab965fa/0x0.jpg?format=jpg&crop=3896,2193,x0,y27,safe&height=900&width=1600&fit=bounds" alt="Shroud interview" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Shroud: Life After Competitive Play</h3>
+                        <div class="card-meta">March 15, 2025 • FPS • 12 min read</div>
+                        <a href="#" class="read-more">Read Interview →</a>
+                    </div>
+                </div>
+                
+                <div class="interview-card">
+                    <img src="https://esportsinsider.com/wp-content/uploads/2025/01/Tenz-Most-Visited-VALORANT-Player-Liquipedia.jpg" alt="TenZ interview" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">TenZ: Rising Star of Valorant</h3>
+                        <div class="card-meta">March 28, 2025 • Valorant • 15 min read</div>
+                        <a href="./interview_s1mple.html " class="read-more">Read Interview →</a>
+                    </div>
+                </div>
+                
+                <div class="interview-card">
+                    <img src="https://media.licdn.com/dms/image/v2/C5612AQEDsaoIEl-aPA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1611667634480?e=2147483647&v=beta&t=hrn19uboHaCfRXckxn04EIS9VbrOG1C97_kYn2xGRiQ" alt="Pokimane interview" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Pokimane on Building a Gaming Empire</h3>
+                        <div class="card-meta">March 10, 2025 • Content Creation • 18 min read</div>
+                        <a href="./interview_pokimane.html" class="read-more">Read Interview →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Subscribe Section -->
+        <section class="subscribe-section">
+            <h2 class="subscribe-title">Never Miss an Interview</h2>
+            <p class="subscribe-desc">Get the latest gaming interviews, stories, and analysis delivered straight to your inbox. Join the FragZone community today!</p>
+                <!-- <button type="submit" class="subscribe-btn">Subscribe</button> --><!-- Button trigger modal -->
+<button type="button" class="button subscribe-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <span class="button-content">More Interviews </span>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: #865dff;">Unlock Full Interviews</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark">
+          <p>  Subscribe now to get unlimited access to expert Interviews of your favorite gamers.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn" style="background-color: #865dff;">Subscribe Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        </section>
+    </div>
+    <!-- Bottom section of footer only -->
+  <footer class="nexgen-footer">
+    <div class="nexgen-footer-container">
+      <!-- Bottom section with copyright and additional links -->
+      <div class="nexgen-bottom-section">
+        <div class="nexgen-copyright">
+          <p>&copy; 2025 NexGen Gaming Magazine. All rights reserved.</p>
+        </div>
+
+        <div class="nexgen-bottom-links">
+          <a href="#">Cookie Policy</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative elements -->
+    <div class="nexgen-footer-decoration">
+      <div class="nexgen-glow-orb nexgen-glow-orb-1"></div>
+      <div class="nexgen-glow-orb nexgen-glow-orb-2"></div>
+      <div class="nexgen-grid-lines"></div>
+    </div>
+  </footer>
+</body>
+</html>git 

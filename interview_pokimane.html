@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FragZone | Pokimane: Building a Gaming Empire</title>
+   <link rel="stylesheet" href="./interview.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Bootstrap CSS  -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Google Fonts  -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100..700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Animate.css  -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- jQuery  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <!-- Popper.js  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+
+  <!-- GSAP  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- GSAP ScrollTrigger  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Bootstrap JavaScript  -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body style="background-color: #1f1d1d; color: #f8fafc;">
+    <div>
+        <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="./IMG/2-removebg-preview.png" alt="Logo" />
+          </a>
+  
+          <!-- Toggler -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Nav Links -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav fw-medium">
+              <li class="nav-item">
+                <a class="nav-link  me-lg-4" href="index.html">Home</a>
+              </li>
+              <!-- CATEGORY DROPDOWN -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle me-lg-4"
+                  href="#"
+                  id="categoryDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                  <li><a class="dropdown-item" href="news.html">News & Updates</a></li>
+                  <li><a class="dropdown-item" href="review.html">Game Reviews</a></li>
+                  <li>
+                    <a class="dropdown-item" href="esports.html"
+                      >E-sports & Competitive Gaming</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./opinion.html">Opinion & Features</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="article.html">Article</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="author.html">Author</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="contact1.html">Contact</a>
+              </li>
+  
+              <!-- Mobile Search -->
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="#" id="mobileSearch">
+                  <i class="fas fa-search"></i>
+                </a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-lg-4" href="subscribe.html">Subcribe</a>
+              </li>
+            </ul>
+          </div>
+  
+          <!-- Desktop Search -->
+          <div class="d-none d-lg-block ms-auto">
+            <a class="nav-link search-icon" href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+        <!-- Header -->
+        <header class="site-header">
+            <div class="logo">FragZone</div>
+            <div class="tagline">Where Gaming Legends Tell Their Stories</div>
+        </header>
+        
+        <!-- Featured Interview -->
+        <main class="featured-interview">
+            <div class="interview-header">
+                <h1 class="interview-title">"The Evolution of Content Creation" - Interview with Pokimane</h1>
+                <div class="interview-meta">
+                    <span><i>🎮</i> Content Creator</span>
+                    <span><i>📅</i> March 10, 2025</span>
+                    <span><i>👤</i> By Rebecca Chen</span>
+                    <span><i>⏱️</i> 18 min read</span>
+                </div>
+            </div>
+            
+            <div class="video-container">
+                <!-- YouTube iframe (using a placeholder) -->
+                <iframe src="https://www.youtube.com/embed/X3ARdNAAnXI?si=D3PaWpVLdZ08dz3I" title="Interview with Pokimane - Building a Gaming Empire" allowfullscreen></iframe>
+            </div>
+            
+            <div class="interview-content">
+                <p>Imane "Pokimane" Anys stands as one of the most influential figures in gaming content creation. From her humble beginnings streaming League of Legends to becoming a multimedia entrepreneur, co-founder of multiple companies, and advocate for creator rights, Pokimane has redefined what it means to build a career in the digital space.</p>
+                
+                <p>In this in-depth conversation, Pokimane reflects on her decade-long journey in content creation, the challenges of being a woman in gaming, her business ventures, and her vision for the future of the creator economy.</p>
+                
+                <h3>Early Streaming Days</h3>
+                <p>"I started streaming pretty organically," Pokimane recalls with a soft laugh. "I was studying engineering in college and playing a lot of League of Legends. Streaming was just a fun hobby at first—a way to share my gameplay and connect with others who loved the game."</p>
+                
+                <p>That hobby quickly began to gain traction. "The growth was gradual but consistent. I remember hitting my first 1,000 followers and thinking that was the peak. I never imagined it would become my career. There was no blueprint for this kind of job when I started—we were all figuring it out as we went along."</p>
+                
+                <h3>Navigating the Male-Dominated Gaming Space</h3>
+                <p>"Being one of the few visible women in the gaming space came with unique challenges," she says thoughtfully. "There was this constant pressure to prove myself, to show that I wasn't just there because of my gender but because I genuinely loved gaming and was good at it."</p>
+                
+                <p>She continues, "The comments and assumptions were frustrating—people questioning your skills, your authenticity, your motivations. But I tried to focus on building a community that valued positivity and inclusivity. Over time, I think that approach helped change some perspectives about women in gaming, though we still have a long way to go."</p>
+                
+                <h3>Expanding Beyond Gaming</h3>
+                <p>"Diversification has been key to longevity in this space," Pokimane explains. "While gaming remains at the core of what I do, I've always been interested in other areas—beauty, fashion, tech, business. Bringing those interests into my content felt natural, and it allowed me to connect with a broader audience."</p>
+                
+                <p>That expansion extended to platforms as well. "Being platform-agnostic has been a deliberate strategy. I've built presences on Twitch, YouTube, Instagram, TikTok—each serving different purposes and reaching different segments of my audience. It's about not putting all your eggs in one basket, especially in an industry that changes so rapidly."</p>
+                
+                <h3>Business Ventures and Entrepreneurship</h3>
+                <p>"Starting RTS was a natural evolution for me," she says, referring to the talent management and brand consulting firm she co-founded. "After years of navigating contracts, negotiations, and brand deals on my own, I wanted to create a company that would advocate for creators' best interests and help them build sustainable careers."</p>
+                
+                <p>Her entrepreneurial spirit didn't stop there. "With Cloak, our goal was to create gaming apparel that people would actually want to wear in their daily lives—high-quality, subtle designs that spoke to gaming culture without screaming it. And then there's Myna Labs, which focuses on products that I'm passionate about and can authentically stand behind."</p>
+                
+                <p>"These ventures aren't just about diversifying income," she emphasizes. "They're about creating structures that can outlast individual content trends and contribute something meaningful to the industry."</p>
+                
+                <h3>Mental Health and Setting Boundaries</h3>
+                <p>"The burnout is real in content creation," Pokimane acknowledges with a serious expression. "You're essentially always 'on'—creating, engaging, responding. And social media doesn't have traditional work hours or weekends off."</p>
+                
+                <p>Learning to set boundaries has been crucial. "I've become much more protective of my time and energy over the years. That means taking breaks when needed, being selective about projects and collaborations, and sometimes stepping away from platforms entirely to recharge. It was scary at first—there's this fear that if you're not constantly present, people will forget about you. But I've found the opposite to be true—taking care of your wellbeing actually leads to better, more authentic content."</p>
+                
+                <h3>The Future of Content Creation</h3>
+                <p>"We're in the middle of a fundamental shift in how media is consumed and created," Pokimane observes. "Traditional entertainment gatekeepers are losing influence, while individual creators are building direct relationships with their audiences. That's powerful, but it also comes with responsibility."</p>
+                
+                <p>Looking ahead, she sees both opportunities and challenges. "AI tools, new platforms, virtual reality—these will all shape the next era of content creation. But the core elements that make someone successful won't change: authenticity, consistency, adaptability, and a genuine connection with your community."</p>
+                
+                <p>As for her own future? "I'm focused on building systems and businesses that empower creators, including myself. I want to create pathways for sustainability in an industry that's often perceived as fleeting. And personally, I'm excited to keep evolving—to continue growing both as a creator and as a businesswoman. This industry rewards those who can adapt and reinvent themselves, and that's what I plan to keep doing."</p>
+                
+                <div class="gamer-bio">
+                    <div class="bio-header">
+                        <img src="https://cdn.mos.cms.futurecdn.net/JooynnvU3gzxgYP73nJqkY-1200-80.png" alt="Pokimane" class="bio-avatar">
+                        <div class="bio-info">
+                            <h3>Imane "Pokimane" Anys</h3>
+                            <p>Content Creator & Entrepreneur</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bio-text">
+                        <p>Born in 1996, Pokimane is a Moroccan-Canadian content creator who rose to prominence streaming League of Legends and Fortnite. Known for her engaging personality and authentic approach to content, she has built one of the most recognizable personal brands in gaming. Beyond streaming, Pokimane has established herself as a savvy entrepreneur, co-founding talent agency RTS, gaming apparel brand Cloak (with Markiplier and Jacksepticeye), and beauty/lifestyle company Myna Labs. She's an advocate for creator rights, diversity in gaming, and mental health awareness.</p>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-value">10.1M</div>
+                            <div class="stat-label">Twitch Followers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">8.5M</div>
+                            <div class="stat-label">YouTube Subscribers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">$15M+</div>
+                            <div class="stat-label">Estimated Net Worth</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">29</div>
+                            <div class="stat-label">Age</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Related Interviews -->
+        <section class="related-interviews">
+            <h2 class="section-title">More Creator Interviews</h2>
+            
+            <div class="interview-grid">
+                <div class="interview-card">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/5f32ef218565d43b4ab965fa/0x0.jpg?format=jpg&crop=3896,2193,x0,y27,safe&height=900&width=1600&fit=bounds" alt="Shroud interview" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">"From Pro Player to Content King" - Shroud</h3>
+                        <div class="card-meta">March 15, 2025 • FPS Legend • 12 min read</div>
+                        <a href="#" class="read-more">Read Interview →</a>
+                    </div>
+                </div>
+                
+                <div class="interview-card">
+                    <img src="https://esportsinsider.com/wp-content/uploads/2025/01/Tenz-Most-Visited-VALORANT-Player-Liquipedia.jpg" alt="TenZ interview" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">TenZ: Rising Star of Valorant</h3>
+                        <div class="card-meta">March 28, 2025 • Valorant • 15 min read</div>
+                        <a href="./esports.html#tenz" class="read-more">Read Interview →</a>
+                    </div>
+                </div>
+                
+               
+                    <div class="interview-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgolggfMWZXOlDFo_0NDjmg9fWHpnaI9l2bA&s" alt="s1mple interview" class="card-img">
+                        <div class="card-content">
+                            <h3 class="card-title">"I Play to Be the Best, Nothing Less" - s1mple</h3>
+                            <div class="card-meta">February 28, 2025 • CS2 • 20 min read</div>
+                            <a href="./interview_s1mple.html" class="read-more">Read Interview →</a>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        
+        <!-- Subscribe Section -->
+        <section class="subscribe-section">
+            <h2 class="subscribe-title">Never Miss an Interview</h2>
+            <p class="subscribe-desc">Get the latest gaming interviews, stories, and analysis delivered straight to your inbox. Join the FragZone community today!</p>
+                <!-- <button type="submit" class="subscribe-btn">Subscribe</button> --><!-- Button trigger modal -->
+<button type="button" class="button subscribe-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <span class="button-content">More Interviews </span>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: #865dff;">Unlock Full Interviews</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark">
+          <p>Subscribe now to get unlimited access to expert Interviews of your favorite gamers.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn" style="background-color: #865dff;">Subscribe Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        </section>
+    </div>
+    <!-- Bottom section of footer only -->
+  <footer class="nexgen-footer">
+    <div class="nexgen-footer-container">
+      <!-- Bottom section with copyright and additional links -->
+      <div class="nexgen-bottom-section">
+        <div class="nexgen-copyright">
+          <p>&copy; 2025 NexGen Gaming Magazine. All rights reserved.</p>
+        </div>
+
+        <div class="nexgen-bottom-links">
+          <a href="#">Cookie Policy</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative elements -->
+    <div class="nexgen-footer-decoration">
+      <div class="nexgen-glow-orb nexgen-glow-orb-1"></div>
+      <div class="nexgen-glow-orb nexgen-glow-orb-2"></div>
+      <div class="nexgen-grid-lines"></div>
+    </div>
+  </footer>
+</body>
+</html>

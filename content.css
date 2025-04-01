@@ -2,6 +2,27 @@
 :root {
     --accent-dark: #865DFF; /* Used for headings */
 }
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #1f1d1d; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #4b0082; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #865dff; 
+  }
 
 /* Global Styles */
 * {

@@ -7,6 +7,27 @@
 :root {
   --accent-dark: #865DFF;  /* Used for headings */
 }
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1f1d1d; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4b0082; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #865dff; 
+}
 /* Paragraphs */
 #card-description p {
   font-family: "Boldonse", sans-serif;
@@ -307,21 +328,22 @@ body {
 
     #div1 .button{
       top: 12px;
-      margin-left: 28vh;
+      margin-left: 27vh;
   }
 
     #div2 .button{
         top: 28px;
-        margin-left: 28vh;
+        margin-left: 27vh;
     }
     
     #div3 .button {
-      margin-left: 82vh;
+      margin-left: 78vh;
       bottom: 1vh;
     }
 
     #div4 .button{
-        margin-left: 82vh;
+        margin-left: 78vh;
+        top: 8px;
     }
     #div4 img{
       height: 300px;
@@ -331,7 +353,7 @@ body {
     }
     #div5 .button{
       margin-top: 65px;
-      margin-left: 28vh;
+      margin-left: 26vh;
     }
     #div6 .button{
       margin-top: 11vh;
@@ -340,7 +362,7 @@ body {
 
     #div6 .btn {
       height: 25px;
-      margin-left: 28vh;
+      margin-left: 26vh;
     }
 
 /* Large Devices (Desktops and Laptops) */
